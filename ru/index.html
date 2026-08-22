@@ -813,8 +813,10 @@ function openLeadModal(buttonLabel){
   document.getElementById('leadModal').classList.add('open');
   document.getElementById('modalFormView').style.display = 'block';
   document.getElementById('modalMessengerView').style.display = 'none';
+  updateCities();
 }
 let catalogInterestLabel = '';
+updateCities();
 window.addEventListener('load', function(){
   const urlInterestParam = new URLSearchParams(window.location.search).get('interest');
   const urlProductParam = new URLSearchParams(window.location.search).get('product');
