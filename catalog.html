@@ -7,11 +7,14 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/icon-180x180.png">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>JIMON GROUP продукциясынын каталогу — ТКМ комплекстеринин толук линиясы</title>
-<meta name="description" content="JIMON GROUP продукциясынын толук каталогу: BIRUNKANG, СЮЭ ЛАН ДО, СЯНЬ ЮНЬ Ю, MAYOU, SHANLINENG жана башкалар. Дәстүрлүү кытай медицинасынын принциптериндеги табигый комплекстер.">
+<meta name="description" content="Полный каталог продукции JIMON GROUP: BIRUNKANG, СЮЭ ЛАН ДО, СЯНЬ ЮНЬ Ю, MAYOU, SHANLINENG и другие. Натуральные комплексы на принципах традиционной китайской медицины.">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <link rel="canonical" href="https://jimongroup.kg/catalog.html">
 <link rel="alternate" hreflang="ky-KG" href="https://jimongroup.kg/catalog.html" />
 <link rel="alternate" hreflang="ru-KG" href="https://jimongroup.kg/ru/catalog.html" />
+<link rel="alternate" hreflang="ru-RU" href="https://jimon-group.ru/catalog.html" />
+<link rel="alternate" hreflang="ru-KZ" href="https://jimongroup.kz/catalog.html" />
+<link rel="alternate" hreflang="kk-KZ" href="https://jimongroup.kz/kz/catalog.html" />
 <link rel="alternate" hreflang="x-default" href="https://jimongroup.kg/catalog.html" />
 
 <script type="application/ld+json">
@@ -64,6 +67,37 @@
   .pcard-ask:hover{background:rgba(212,168,76,0.18);}
   .pcard-desc{display:none; margin-top:10px; padding-top:10px; border-top:1px solid rgba(212,168,76,0.12); font-size:11.5px; color:var(--text2); line-height:1.65;}
   .pcard-desc.open{display:block;}
+  .pcard-price{font-size:15px; font-weight:800; color:var(--gold-light); margin-bottom:8px;}
+  .pcard-price-note{font-size:10px; color:var(--text2); margin-top:2px; font-weight:500;}
+  .discount-banner{background:linear-gradient(135deg,rgba(212,168,76,0.14),rgba(212,168,76,0.05)); border:1px solid rgba(212,168,76,0.3); border-radius:14px; padding:18px 22px; margin-bottom:30px; text-align:center;}
+  .discount-banner b{color:var(--gold-light);}
+
+  /* ===== ПОЛНАЯ ПОСТЕР-КАРТОЧКА (как в PDF-каталоге) ===== */
+  .product-grid.full-cards{grid-template-columns:repeat(auto-fill,minmax(320px,1fr));}
+  .fcard{background:var(--card-bg); border:1px solid var(--border); border-radius:18px; overflow:hidden; display:flex; flex-direction:column;}
+  .fcard-img-wrap{width:100%; aspect-ratio:1/1; background:#0a1810; display:flex; align-items:center; justify-content:center; overflow:hidden;}
+  .fcard-img-wrap img{width:100%; height:100%; object-fit:cover;}
+  .fcard-body{padding:20px 20px 24px;}
+  .fcard-name{font-family:'Noto Serif SC',serif; font-size:1.3rem; color:var(--gold-light); text-align:center; margin-bottom:4px;}
+  .fcard-subtitle{text-align:center; font-size:0.95rem; font-weight:700; color:var(--text); margin-bottom:2px;}
+  .fcard-volume{text-align:center; font-size:0.78rem; color:var(--text2); margin-bottom:14px;}
+  .fcard-desc{font-size:0.82rem; color:var(--text2); line-height:1.6; text-align:center; margin-bottom:16px; padding-bottom:16px; border-bottom:1px solid rgba(212,168,76,0.15);}
+  .fcard-cols{display:grid; grid-template-columns:1fr auto; gap:16px; margin-bottom:16px; align-items:start;}
+  .fcard-ingr-title,.fcard-price-title{font-size:0.8rem; font-weight:700; color:var(--gold-light); margin-bottom:8px;}
+  .fcard-ingr-list{list-style:none; padding:0; margin:0;}
+  .fcard-ingr-list li{font-size:0.76rem; color:var(--text2); line-height:1.55; margin-bottom:5px; padding-left:12px; position:relative;}
+  .fcard-ingr-list li::before{content:'•'; position:absolute; left:0; color:var(--gold);}
+  .fcard-price-box{text-align:center; white-space:nowrap;}
+  .fcard-price-box .price-ru{font-size:1.15rem; font-weight:800; color:var(--gold-light);}
+  .fcard-usage-title{font-size:0.8rem; font-weight:700; color:var(--gold-light); margin:14px 0 6px; padding-top:14px; border-top:1px solid rgba(212,168,76,0.15);}
+  .fcard-usage{font-size:0.78rem; color:var(--text2); line-height:1.6;}
+  .fcard-warning{margin-top:14px; padding:12px 14px; background:rgba(212,168,76,0.06); border:1px solid rgba(212,168,76,0.2); border-radius:10px; font-size:0.7rem; color:var(--text2); line-height:1.55;}
+  .fcard-warning b{color:var(--gold-light);}
+  .fcard-actions{display:flex; align-items:center; justify-content:space-between; gap:8px; margin-top:16px;}
+  .fcard-actions .pcard-more{font-size:0.72rem; color:rgba(148,163,184,0.55); text-decoration:underline; text-decoration-color:rgba(148,163,184,0.3); cursor:pointer; background:none; border:none; padding:4px 0;}
+  .fcard-actions .pcard-more:hover{color:var(--gold);}
+  .fcard-actions .pcard-ask{flex-shrink:0; padding:10px 18px; font-size:0.8rem; font-weight:800; color:#1a1200; background:linear-gradient(135deg,#f0c94a,#e0a92f); border:none; border-radius:10px; cursor:pointer; box-shadow:0 2px 8px rgba(224,169,47,0.35);}
+  .fcard-actions .pcard-ask:hover{filter:brightness(1.08);}
 
   h2.section-h{font-family:'Noto Serif SC',serif; color:var(--gold-light); font-size:1.4rem; margin:50px 0 6px; text-align:center;}
   .section-sub-h{text-align:center; color:var(--text2); font-size:0.92rem; margin-bottom:24px;}
@@ -114,305 +148,815 @@
 </div>
 
 <div class="container">
-  <div class="product-grid" id="productGrid">
-      <div class="pcard">
-      <div class="pcard-img-wrap"><img src="/images/product-1.png" alt="BIRUNKANG (碧润康) · Жевательные таблетки «Лотос и Боярышник»" loading="lazy" onerror="this.parentElement.style.display='none'"></div>
-      <div class="pcard-body">
-      <div class="pcard-brand">BIRUNKANG (碧润康) · Жевательные таблетки «Лотос и Боярышник»</div>
-      <div class="pcard-short">Тамак сиңирүү · детокс</div>
-      <div class="pcard-hook">Дәстүрлүү кытай чөптөрүнүн негизиндеги табигый чайнама таблеткалар — лотос жалбырагы, долоно, пория жана кассия үрөнү. Күнүнө 2–3 таблетка тамак сиңирүүнү, дененин жеңилдигин жана сергектикти колдойт. 30 таблетка — 10–15 күндүк курс.</div>
-      <div class="pcard-actions">
-      <a href="/birunkang.html" class="pcard-more">толук маалымат →</a>
-      <button class="pcard-ask" data-key="product-1" onclick="openPengModalByKey(this)">Спросить Пэн →</button>
-      </div>
-      <div class="pcard-desc">Тяжесть после еды, вздутие, жирный блеск на коже, налёт на языке, постоянная усталость — всё это признаки того, что организму нужна мягкая поддержка.</div>
+  <div class="discount-banner">
+    <b>Кайра сатып алууларга арзандатуу:</b> катталып, 1 продукт сатып алыңыз — кийинки бардык сатып алууларга 10% арзандатуу аласыз. Комплекс сатып алсаңыз — 20% арзандатуу.
+  </div>
+  <div class="product-grid full-cards" id="productGrid">
+      <div class="fcard">
+      <div class="fcard-img-wrap"><img src="/images/product-1.jpg" alt="Aura Curu Массажная маска для сияния и упругости" loading="lazy" onerror="this.parentElement.style.display='none'"></div>
+      <div class="fcard-body">
+        <div class="fcard-name">«Aura Curu»</div>
+        <div class="fcard-subtitle">Жаркыроо жана серпилгичтикке арналган массаждык маска</div>
+        <div class="fcard-volume">50 г</div>
+        <div class="fcard-desc">Теринин жаркыроосу жана серпилгичтиги үчүн сонун массаждык маска. Терең нымдандырат, ийкемдүүлүктү жогорулатат, табигый жаркыроо тартуулайт жана териni калыбына келтирет. Табигый эфир майлары жана экстракттар синергияда иштейт — таза, кароого алынган жана жаш көрүнүш үчүн күн сайын.</div>
+        <div class="fcard-cols">
+          <div>
+            <div class="fcard-ingr-title">Негизги ингредиенттер</div>
+            <ul class="fcard-ingr-list"><li>Камфора лавр эфир майы — тонус жана тазалоо</li><li>Лимон экстракты — жаркыроо жана сергитүү</li><li>Розмарин эфир майы — стимуляция жана серпилгичтик</li><li>Дамаск раушанынын эфир майы — азыктандыруу жана калыбына келтирүү</li><li>Арча экстракты — антиоксиданттык коргоо</li></ul>
+          </div>
+          <div class="fcard-price-box">
+            <div class="fcard-price-title">Баасы</div>
+            <div class="price-ru">79 $</div>
+          </div>
+        </div>
+        <div class="fcard-usage-title">Колдонуу ыкмасы</div>
+        <div class="fcard-usage">Тазаланган бет терисине сүйкөңүз. Сиңгенче тегерек кыймылдар менен жеңил массаж жасаңыз. Бир нече мүнөткө калтырыңыз, андан кийин калдыктарды алыңыз же суу менен жууп салыңыз.</div>
+        <div class="fcard-warning"><b>Көңүл буруңуз!</b> Тек «Жимон Групп» компаниясынын расмий дүкөнүндө сатылат. Жасалма товарлардан этияттаныңыз. Косметикалык каражат болуп саналат. Дары каражаты эмес. Салкын, кургак жерде сактаңыз.</div>
+        <div class="fcard-actions">
+          <span class="pcard-more" onclick="toggleDesc(this)">толук маалымат</span>
+          <button class="pcard-ask" data-key="product-1" onclick="openPengModalByKey(this)">Пэндан суроо →</button>
+        </div>
       </div></div>
-      <div class="pcard">
-      <div class="pcard-img-wrap"><img src="/images/product-2.png" alt="СЮЭ ЛАН ДО (雪蓝朵) · «Ангелика Кейске и Натто»" loading="lazy" onerror="this.parentElement.style.display='none'"></div>
-      <div class="pcard-body">
-      <div class="pcard-brand">СЮЭ ЛАН ДО (雪蓝朵) · «Ангелика Кейске и Натто»</div>
-      <div class="pcard-short">Жүрөк · тамырлар</div>
-      <div class="pcard-hook">Ангелика Кейске (Аситаба) жана Натто негизиндеги эрип кетүүчү таблеткалар, лумброкиназа, жүгөрү мурутчалары жана өсүмдүк экстрактылары менен толукталган. 60 таблетка.</div>
-      <div class="pcard-actions">
-     <a href="/xuelanduo.html" class="pcard-more">толук маалымат →</a>
-      <button class="pcard-ask" data-key="product-2" onclick="openPengModalByKey(this)">Спросить Пэн →</button>
-      </div>
-      <div class="pcard-desc">Сердце работает без остановки 24 часа в сутки. Стресс, малоподвижный образ жизни и возраст постепенно влияют на кровообращение и тонус сосудов.</div>
+      <div class="fcard">
+      <div class="fcard-img-wrap"><img src="/images/product-2.jpg" alt="Aura Curu Очищающий мёд-гель для умывания" loading="lazy" onerror="this.parentElement.style.display='none'"></div>
+      <div class="fcard-body">
+        <div class="fcard-name">«Aura Curu»</div>
+        <div class="fcard-subtitle">Жуунуу үчүн тазалоочу бал-гель</div>
+        <div class="fcard-volume">100 мл × 2 даана</div>
+        <div class="fcard-desc">Күн сайынгы жуунуу үчүн жумшак тазалоочу бал-гель. Ластанууну, себумду жана макияждын калдыктарын теринин коргоочу катмарын бузбай жумшак кетирет. Нымдуулукту сактайт, тартылуу сезимин пайда кылбайт жана сезимтал терилерге да сонун туура келет. Таза, кароого алынган бет үчүн эртең менен жана кечинде.</div>
+        <div class="fcard-cols">
+          <div>
+            <div class="fcard-ingr-title">Негизги ингредиенттер</div>
+            <ul class="fcard-ingr-list"><li>CalmYang комплекси — тынчтандыруу жана коргоо</li><li>Ферменттелген полисахарид — жумшак тазалоо</li><li>Трегалоза — нымдуулукту кармоо</li><li>Гидролизделген сулу белогу — азыктандыруу жана ыңгайлуулук</li><li>Жумшак амин кислота компоненттери — этияттуу кароо</li></ul>
+          </div>
+          <div class="fcard-price-box">
+            <div class="fcard-price-title">Баасы</div>
+            <div class="price-ru">65 $</div>
+          </div>
+        </div>
+        <div class="fcard-usage-title">Колдонуу ыкмасы</div>
+        <div class="fcard-usage">Нымдуу бет терисине аз өлчөмдө сүйкөңүз. Жеңил массаждык кыймылдар менен көбүктөндүрүңүз. 1–2 мүнөткө таратыңыз. Жылуу суу менен жууп салыңыз. Эртең менен жана кечинде колдонуңуз.</div>
+        <div class="fcard-warning"><b>Көңүл буруңуз!</b> Тек «Жимон Групп» компаниясынын расмий дүкөнүндө сатылат. Жасалма товарлардан этияттаныңыз. Косметикалык каражат болуп саналат. Дары каражаты эмес.</div>
+        <div class="fcard-actions">
+          <span class="pcard-more" onclick="toggleDesc(this)">толук маалымат</span>
+          <button class="pcard-ask" data-key="product-2" onclick="openPengModalByKey(this)">Пэндан суроо →</button>
+        </div>
       </div></div>
-      <div class="pcard">
-      <div class="pcard-img-wrap"><img src="/images/product-3.png" alt="СЯНЬ ЮНЬ Ю (纤韵悠) · Фруктово-овощные таблетки" loading="lazy" onerror="this.parentElement.style.display='none'"></div>
-      <div class="pcard-body">
-      <div class="pcard-brand">СЯНЬ ЮНЬ Ю (纤韵悠) · Фруктово-овощные таблетки</div>
-      <div class="pcard-short">Антивисцерал · Чыгаруу</div>
-      <div class="pcard-hook">10дон ашык табигый экстракттын негизиндеги мөмө-жашылча чайнама таблеткалары: кулпунай, кара карагат, жашыл кофе, ак буурчак, женьшень, кудзу. Пачкада 30 таблетка.</div>
-      <div class="pcard-actions">
-      <a href="/xianyunyu.html" class="pcard-more">толук маалымат →</a>
-      <button class="pcard-ask" data-key="product-3" onclick="openPengModalByKey(this)">Спросить Пэн →</button>
-      </div>
-      <div class="pcard-desc">Медленный обмен веществ — не приговор, а сигнал организма: ему не хватает нужных нутриентов, пищевых волокон и поддержки кишечника.</div>
+      <div class="fcard">
+      <div class="fcard-img-wrap"><img src="/images/product-3.jpg" alt="Aura Curu Омолаживающий лифтинг-спрей" loading="lazy" onerror="this.parentElement.style.display='none'"></div>
+      <div class="fcard-body">
+        <div class="fcard-name">«Aura Curu»</div>
+        <div class="fcard-subtitle">Жашартуучу лифтинг-спрей</div>
+        <div class="fcard-volume">120 мл</div>
+        <div class="fcard-desc">Бетке арналган ыкчам жашартуучу лифтинг-спрей. Терең нымдандырат, серпилгичтик жана ийкемдүүлүктү жогорулатат, майда бырыштарды тегиздөөгө жардам берет жана теринин коргоочу катмарын колдойт. Күчтүү пептиддер жана гиалурон кислотасы бар жеңил текстура — күн бою жаңы, тартылган жана жаркыраган бет үчүн.</div>
+        <div class="fcard-cols">
+          <div>
+            <div class="fcard-ingr-title">Негизги ингредиенттер</div>
+            <ul class="fcard-ingr-list"><li>Эктоин — коргоо жана нымдандыруу</li><li>Азиялык центелла экстракты — калыбына келтирүү</li><li>Ацетилтетрапептид-5 — лифтинг-эффект</li><li>Гидролизделген коллаген + 80 түрдүү ГК — серпилгичтик</li><li>VitaCore комплекси — кешенди колдоо</li></ul>
+          </div>
+          <div class="fcard-price-box">
+            <div class="fcard-price-title">Баасы</div>
+            <div class="price-ru">65 $</div>
+          </div>
+        </div>
+        <div class="fcard-usage-title">Колдонуу ыкмасы</div>
+        <div class="fcard-usage">Тазаланган бет терисине 15–20 см аралыктан бүркүңүз. Толук сиңгенче жеңил кагуу кыймылдары менен таратыңыз. Эртең менен, кечинде жана күн бою колдонуңуз.</div>
+        <div class="fcard-warning"><b>Көңүл буруңуз!</b> Тек «Жимон Групп» компаниясынын расмий дүкөнүндө сатылат. Жасалма товарлардан этияттаныңыз. Косметикалык каражат болуп саналат. Дары каражаты эмес.</div>
+        <div class="fcard-actions">
+          <span class="pcard-more" onclick="toggleDesc(this)">толук маалымат</span>
+          <button class="pcard-ask" data-key="product-3" onclick="openPengModalByKey(this)">Пэндан суроо →</button>
+        </div>
       </div></div>
-      <div class="pcard">
-      <div class="pcard-img-wrap"><img src="/images/product-4.png" alt="MAYOU (马优) · Почечный комплекс «Женьшень и Хуанцзин»" loading="lazy" onerror="this.parentElement.style.display='none'"></div>
-      <div class="pcard-body">
-      <div class="pcard-brand">MAYOU (马优) · Почечный комплекс «Женьшень и Хуанцзин»</div>
-      <div class="pcard-short">Бөйрөк · эркектик</div>
-      <div class="pcard-hook">Женьшень, хуанцзин, годжи жемиштери жана эвкоммиянын эркек гүлдөрү бар премиум фитокомплекс. −196°C инстанттык тоңдуруу технологиясы. 20 таблетка.</div>
-      <div class="pcard-actions">
-     <a href="/mayou.html" class="pcard-more">толук маалымат →</a>
-      <button class="pcard-ask" data-key="product-4" onclick="openPengModalByKey(this)">Спросить Пэн →</button>
-      </div>
-      <div class="pcard-desc">В восточной медицине почки — источник жизненной энергии Ци, основа выносливости, иммунитета и репродуктивной функции.</div>
+      <div class="fcard">
+      <div class="fcard-img-wrap"><img src="/images/product-4.jpg" alt="Aura Curu Омолаживающее моделирующее масло-эликсир" loading="lazy" onerror="this.parentElement.style.display='none'"></div>
+      <div class="fcard-body">
+        <div class="fcard-name">«Aura Curu»</div>
+        <div class="fcard-subtitle">Жашартуучу калыптоочу май-эликсир</div>
+        <div class="fcard-volume">30 мл</div>
+        <div class="fcard-desc">Териni жашартууга арналган сонун калыптоочу май-эликсир. Серпилгичтик жана ийкемдүүлүктү жогорулатат, интенсивдүү нымдандырат жана азыктандырат, түстү теңдештирет жана текстураны жакшыртат. Теринин коргоочу катмарын бекемдейт. Күчтүү пептиддер, рекомбинанттык эластин жана өсүмдүк экстракттары — байкалаарлык тартылган, жаркыраган жана кароого алынган тери үчүн.</div>
+        <div class="fcard-cols">
+          <div>
+            <div class="fcard-ingr-title">Негизги ингредиенттер</div>
+            <ul class="fcard-ingr-list"><li>Рекомбинанттык эластин IFN-ELA1000 — серпилгичтик</li><li>Гидролизделген коллаген — калыбына келтирүү</li><li>Пальмитоил-тетрапептид-4 жана трипептид-1 — лифтинг</li><li>Гликозил-рутин — антиоксиданттык коргоо</li><li>Сандал жана мандарин экстракттары — азыктандыруу жана жаркыроо</li></ul>
+          </div>
+          <div class="fcard-price-box">
+            <div class="fcard-price-title">Баасы</div>
+            <div class="price-ru">65 $</div>
+          </div>
+        </div>
+        <div class="fcard-usage-title">Колдонуу ыкмасы</div>
+        <div class="fcard-usage">Колдонуудан мурун флаконду жакшылап силкиңиз. Тазаланган бет жана мойун терисине 2–3 тамчы сүйкөңүз. Толук сиңгенче жеңил массаждык кыймылдар менен таратыңыз. Эртең менен жана кечинде колдонуңуз.</div>
+        <div class="fcard-warning"><b>Көңүл буруңуз!</b> Тек «Жимон Групп» компаниясынын расмий дүкөнүндө сатылат. Жасалма товарлардан этияттаныңыз. Тек тышкы колдонуу үчүн. Көзгө тийбөөсүн көзөмөлдөңүз. Косметикалык каражат болуп саналат. Дары каражаты эмес.</div>
+        <div class="fcard-actions">
+          <span class="pcard-more" onclick="toggleDesc(this)">толук маалымат</span>
+          <button class="pcard-ask" data-key="product-4" onclick="openPengModalByKey(this)">Пэндан суроо →</button>
+        </div>
       </div></div>
-      <div class="pcard">
-      <div class="pcard-img-wrap"><img src="/images/product-5.png" alt="ШАНЬ ЛИ НЭН (膳力能) · Льняной коллагеновый пептидный порошок" loading="lazy" onerror="this.parentElement.style.display='none'"></div>
-      <div class="pcard-body">
-      <div class="pcard-brand">ШАНЬ ЛИ НЭН (膳力能) · Льняной коллагеновый пептидный порошок</div>
-      <div class="pcard-short">Тамактануу · Жаштык</div>
-      <div class="pcard-hook">Зыгыр үрөнү жана сөөк коллаген пептиди негизиндеги көп функциялуу синергетикалык порошок ичимдик. Ак буурчак углеводдордун сиңишин токтотот. Стик 30 г × 10 порция.</div>
-      <div class="pcard-actions">
-      <a href="/shanlineng.html" class="pcard-more">толук маалымат →</a>
-      <button class="pcard-ask" data-key="product-5" onclick="openPengModalByKey(this)">Спросить Пэн →</button>
-      </div>
-      <div class="pcard-desc">Современный ритм жизни — это еда на бегу. Этот напиток создан для тех, кто хочет питаться осознанно.</div>
+      <div class="fcard">
+      <div class="fcard-img-wrap"><img src="/images/product-5.jpg" alt="Aura Curu Сыворотка для кожи вокруг глаз" loading="lazy" onerror="this.parentElement.style.display='none'"></div>
+      <div class="fcard-body">
+        <div class="fcard-name">«Aura Curu»</div>
+        <div class="fcard-subtitle">Көз айланасынын терисине арналган сарысуу</div>
+        <div class="fcard-volume">20 г</div>
+        <div class="fcard-desc">Көз айланасынын назик терисине арналган интенсивдүү сарысуу. Майда бырыштарды жана «каз буттарын» жумшартат, шишикти азайтат, түстү ачыктайт жана жаркыроо берет. Тынчтандырат жана теринин чекитин бекемдейт. Муздатуучу эффекти бар керамикалык апликатор — күн сайын жаңы, эс алган көз карашы үчүн.</div>
+        <div class="fcard-cols">
+          <div>
+            <div class="fcard-ingr-title">Негизги ингредиенттер</div>
+            <ul class="fcard-ingr-list"><li>Үч эсе коллаген — серпилгичтик жана тегиздөө</li><li>Тынчтандыруучу өсүмдүк компоненттери — теринин ыңгайлуулугу</li><li>Сымап жана боёк заттарсыз — таза курам</li><li>Керамикалык апликатор 45° — муздатуу жана тактык</li></ul>
+          </div>
+          <div class="fcard-price-box">
+            <div class="fcard-price-title">Баасы</div>
+            <div class="price-ru">79 $</div>
+          </div>
+        </div>
+        <div class="fcard-usage-title">Колдонуу ыкмасы</div>
+        <div class="fcard-usage">Сарысууну апликатор менен көз айланасынын терисине чекит-чекит менен сүйкөңүз. Ички бурчтан сыртка карай, андан кийин ылдыйдан жогору карай жумшак массаж жасаңыз. Жеңил кагуу менен каражаттын сиңишине жардам бериңиз. Эртең менен жана кечинде.</div>
+        <div class="fcard-warning"><b>Көңүл буруңуз!</b> Тек «Жимон Групп» компаниясынын расмий дүкөнүндө сатылат. Жасалма товарлардан этияттаныңыз. Косметикалык каражат болуп саналат. Дары каражаты эмес.</div>
+        <div class="fcard-actions">
+          <span class="pcard-more" onclick="toggleDesc(this)">толук маалымат</span>
+          <button class="pcard-ask" data-key="product-5" onclick="openPengModalByKey(this)">Пэндан суроо →</button>
+        </div>
       </div></div>
-      <div class="pcard">
-      <div class="pcard-img-wrap"><img src="/images/product-6.png" alt="SHANLINENG (膳力能) · Комплекс для суставов и костей" loading="lazy" onerror="this.parentElement.style.display='none'"></div>
-      <div class="pcard-body">
-      <div class="pcard-brand">SHANLINENG (膳力能) · Комплекс для суставов и костей</div>
-      <div class="pcard-short">Муун · Коллаген</div>
-      <div class="pcard-hook">Комплекстүү тамактандыруучу порошок: II түрдөгү коллаген, хондроитин, глюкозамин, гиалурон кислотасы жана минералдар. Саше 6г × 20 пакет.</div>
-      <div class="pcard-actions">
-     <a href="/shanlineng-sustav.html" class="pcard-more">толук маалымат →</a>
-      <button class="pcard-ask" data-key="product-6" onclick="openPengModalByKey(this)">Спросить Пэн →</button>
-      </div>
-      <div class="pcard-desc">Суставы и кости держат нас всю жизнь, но изнашиваются первыми. Комплекс даёт им именно то, из чего они состоят.</div>
+      <div class="fcard">
+      <div class="fcard-img-wrap"><img src="/images/product-6.jpg" alt="CUY RANCHO Антивозрастная серия комплексного ухода за кожей" loading="lazy" onerror="this.parentElement.style.display='none'"></div>
+      <div class="fcard-body">
+        <div class="fcard-name">«CUY RANCHO»</div>
+        <div class="fcard-subtitle">Теринин кешенди кароосуна арналган карылыкка каршы сериясы</div>
+        <div class="fcard-volume">6 каражат</div>
+        <div class="fcard-desc">Премиум класстагы гидролизделген кызыл күрүч экстрактынын негизинде толук карылыкка каршы кароо системасы. Жаркырообу калыбына келтирет, серпилгичтикти жогорулатат, теринi терең азыктандырат жана коргойт. Кытай өсүмдүк философиясы + заманбап активдүү компоненттер — гармониялуу, жаш жана кароого алынган тери үчүн күн сайын.</div>
+        <div class="fcard-cols">
+          <div>
+            <div class="fcard-ingr-title">Негизги ингредиенттер</div>
+            <ul class="fcard-ingr-list"><li>Гидролизделген кызыл күрүч экстракты — жаркыроо жана калыбына келтирүү</li><li>Активдүү өсүмдүк компоненттери — азыктандыруу жана коргоо</li><li>6 каражаттан турган комплекс — толук күн сайынгы кароо</li><li>Жумшак формулалар — ыңгайлуулук жана натыйжа үчүн</li></ul>
+          </div>
+          <div class="fcard-price-box">
+            <div class="fcard-price-title">Баасы</div>
+            <div class="price-ru">362 $</div>
+          </div>
+        </div>
+        <div class="fcard-usage-title">Колдонуу ыкмасы</div>
+        <div class="fcard-usage">Каражаттарды тартип боюнча колдонуңуз: 1. Көбүк → 2. Тоник-эмульсия → 3. Сарысуу → 4. Эссенция → 5. Кушон → 6. Крем. Эртең менен жана/же кечинде.</div>
+        <div class="fcard-warning"><b>Көңүл буруңуз!</b> Тек «Жимон Групп» компаниясынын расмий дүкөнүндө сатылат. Жасалма товарлардан этияттаныңыз. Косметикалык каражат болуп саналат. Дары каражаты эмес.</div>
+        <div class="fcard-actions">
+          <span class="pcard-more" onclick="toggleDesc(this)">толук маалымат</span>
+          <button class="pcard-ask" data-key="product-6" onclick="openPengModalByKey(this)">Пэндан суроо →</button>
+        </div>
       </div></div>
-      <div class="pcard">
-      <div class="pcard-img-wrap"><img src="/images/product-7.png" alt="SHANLINENG (膳力能) · Костный коллагеновый пептидный напиток" loading="lazy" onerror="this.parentElement.style.display='none'"></div>
-      <div class="pcard-body">
-      <div class="pcard-brand">SHANLINENG (膳力能) · Костный коллагеновый пептидный напиток</div>
-      <div class="pcard-short">Пептиддик · Коллаген</div>
-      <div class="pcard-hook">Сөөк коллагени бар функционалдык порошок ичимдик. 10г стик — ысык сууда эритилет. Пачкада 20 порция.</div>
-      <div class="pcard-actions">
-      <a href="/shanlineng-napitok.html" class="pcard-more">толук маалымат →</a>
-      <button class="pcard-ask" data-key="product-7" onclick="openPengModalByKey(this)">Спросить Пэн →</button>
-      </div>
-      <div class="pcard-desc">С годами суставы начинают «скрипеть» — это нехватка коллагена, из которого на 30% состоят наши кости, хрящи и связки.</div>
+      <div class="fcard">
+      <div class="fcard-img-wrap"><img src="/images/product-7.jpg" alt="Снежная Орхидея Лифтинг-крем для лица с коллагеном" loading="lazy" onerror="this.parentElement.style.display='none'"></div>
+      <div class="fcard-body">
+        <div class="fcard-name">«Кар Орхидеясы»</div>
+        <div class="fcard-subtitle">Коллаген менен бетке арналган лифтинг-крем</div>
+        <div class="fcard-volume">30 г</div>
+        <div class="fcard-desc">Теринi байкаларлык жашартуу үчүн коллаген менен интенсивдүү лифтинг-крем. Серпилгичтик жана ийкемдүүлүктү жакшыртат, майда бырыштарды визуалдуу тегиздейт, терең азыктандырат жана нымдандырат. Кургактыкты жана түстүн өчкөндүгүн жоёт. Герметикалык вакуумдук таңгак формуланын жаңылыгын жана натыйжалуулугун сактайт.</div>
+        <div class="fcard-cols">
+          <div>
+            <div class="fcard-ingr-title">Негизги ингредиенттер</div>
+            <ul class="fcard-ingr-list"><li>Коллаген — серпилгичтик жана тегиздөө</li><li>Өсүмдүк компоненттери — азыктандыруу жана ыңгайлуулук</li><li>Вакуумдук система — жаңылыкты сактоо</li><li>Күн сайынгы кароо — бет жана мойунга</li></ul>
+          </div>
+          <div class="fcard-price-box">
+            <div class="fcard-price-title">Баасы</div>
+            <div class="price-ru">65 $</div>
+          </div>
+        </div>
+        <div class="fcard-usage-title">Колдонуу ыкмасы</div>
+        <div class="fcard-usage">Тазаланган бет жана мойун терисине сүйкөңүз. Толук сиңгенче жеңил массаждык кыймылдар менен таратыңыз. Күн сайын колдонууга ылайыктуу.</div>
+        <div class="fcard-warning"><b>Көңүл буруңуз!</b> Тек «Жимон Групп» компаниясынын расмий дүкөнүндө сатылат. Жасалма товарлардан этияттаныңыз. Тек тышкы колдонуу үчүн. Көзгө тийбөөсүн көзөмөлдөңүз. Косметикалык каражат болуп саналат.</div>
+        <div class="fcard-actions">
+          <a href="/shanlineng.html" class="pcard-more">подробнее →</a>
+          <button class="pcard-ask" data-key="product-7" onclick="openPengModalByKey(this)">Пэндан суроо →</button>
+        </div>
       </div></div>
-      <div class="pcard">
-      <div class="pcard-img-wrap"><img src="/images/product-8.png" alt="YISHAYANMEI (伊莎妍美) · Интимный бактериостатический комплекс" loading="lazy" onerror="this.parentElement.style.display='none'"></div>
-      <div class="pcard-body">
-      <div class="pcard-brand">YISHAYANMEI (伊莎妍美) · Интимный бактериостатический комплекс</div>
-      <div class="pcard-short">Аялдардын ден соолугу</div>
-      <div class="pcard-hook">Воробейник, хризантема жана клюква менен жергиликтүү бактериостатикалык кароо үчүн инновациялык фитокапсулалар. Аялдар жана эркектер үчүн. 5,5 мл 10 капсула.</div>
-      <div class="pcard-actions">
-     <a href="/yishayanmei.html" class="pcard-more">толук маалымат →</a>
-      <button class="pcard-ask" data-key="product-8" onclick="openPengModalByKey(this)">Спросить Пэн →</button>
-      </div>
-      <div class="pcard-desc">Деликатная зона — первая линия защиты организма, одна из самых чувствительных к стрессу.</div>
+      <div class="fcard">
+      <div class="fcard-img-wrap"><img src="/images/product-8.jpg" alt="Снежная Орхидея Спрей-мист для ухода и подтяжки лица" loading="lazy" onerror="this.parentElement.style.display='none'"></div>
+      <div class="fcard-body">
+        <div class="fcard-name">«Кар Орхидеясы»</div>
+        <div class="fcard-subtitle">Бетти кароо жана тартууга арналган спрей-мист</div>
+        <div class="fcard-volume">120 мл</div>
+        <div class="fcard-desc">Териni ыкчам нымдандыруу жана тартуу үчүн жеңил спрей-мист. Кургактыкты жоёт, серпилгичтикти калыбына келтирет, карылыкка каршы эффект жана жаңылыкты тартуулайт. Гиалурон кислотасы, ниацинамид жана пептиддер синергияда иштейт — күн бою кароого алынган, жаркыраган бет үчүн. Ар кандай тери түрүнө туура келет.</div>
+        <div class="fcard-cols">
+          <div>
+            <div class="fcard-ingr-title">Негизги ингредиенттер</div>
+            <ul class="fcard-ingr-list"><li>Гиалурон кислотасы — терең нымдандыруу</li><li>Ниацинамид — түстү теңдештирүү жана коргоочу катмар</li><li>Пептиддер — тартуу жана карылыкка каршы эффект</li><li>Жеңил формула — ар кандай тери түрүнө</li><li>Ыңгайлуу спрей — каалаган убакта жаңылык</li></ul>
+          </div>
+          <div class="fcard-price-box">
+            <div class="fcard-price-title">Баасы</div>
+            <div class="price-ru">65 $</div>
+          </div>
+        </div>
+        <div class="fcard-usage-title">Колдонуу ыкмасы</div>
+        <div class="fcard-usage">Жуунгандан кийин бет, мойун жана декольте аймагынын таза терисине 15–20 см аралыктан бүркүңүз. Кереги болгондо эртең менен, кечинде же күн бою колдонуңуз.</div>
+        <div class="fcard-warning"><b>Көңүл буруңуз!</b> Тек «Жимон Групп» компаниясынын расмий дүкөнүндө сатылат. Жасалма товарлардан этияттаныңыз. Тек тышкы колдонуу үчүн. Көзгө тийбөөсүн көзөмөлдөңүз. Косметикалык каражат болуп саналат.</div>
+        <div class="fcard-actions">
+          <a href="/sulrancho.html" class="pcard-more">подробнее →</a>
+          <button class="pcard-ask" data-key="product-8" onclick="openPengModalByKey(this)">Пэндан суроо →</button>
+        </div>
       </div></div>
-      <div class="pcard">
-      <div class="pcard-img-wrap"><img src="/images/product-9.png" alt="TIANRANCUI (添然萃) · Напиток с дигидрокверцетином" loading="lazy" onerror="this.parentElement.style.display='none'"></div>
-      <div class="pcard-body">
-      <div class="pcard-brand">TIANRANCUI (添然萃) · Напиток с дигидрокверцетином</div>
-      <div class="pcard-short">Бронхи · Тамак</div>
-      <div class="pcard-hook">Дигидрокверцетин, бал, мөмө концентраттары жана чөптөр негизиндеги өсүмдүк ичимдиги. Саше 25 мл, пачкада 20 даана.</div>
-      <div class="pcard-actions">
-      <a href="/tianrancui.html" class="pcard-more">толук маалымат →</a>
-      <button class="pcard-ask" data-key="product-9" onclick="openPengModalByKey(this)">Спросить Пэн →</button>
-      </div>
-      <div class="pcard-desc">Сухой воздух, пыль, курение, городской смог раздражают горло — этот напиток создан для точечной защиты.</div>
+      <div class="fcard">
+      <div class="fcard-img-wrap"><img src="/images/product-9.jpg" alt="St. Qanon Солнцезащитный крем SPF 50+ PA++++" loading="lazy" onerror="this.parentElement.style.display='none'"></div>
+      <div class="fcard-body">
+        <div class="fcard-name">«St. Qanon»</div>
+        <div class="fcard-subtitle">SPF 50+ PA++++ күндөн коргоочу крем</div>
+        <div class="fcard-volume">40 мл</div>
+        <div class="fcard-desc">Жогорку SPF 50+ PA++++ фактору менен күндөн ишенимдүү коргоо. UVA жана UVB нурларын натыйжалуу тосот, теринин нымдуулугун колдойт жана кургактыкты алдын алат. Жеңил текстура ыңгайлуу тарайт жана макияждын алдында база катары колдонулушу мүмкүн. Теринин күн сайынгы коргонуусу жана дени сак жаркыроосу үчүн.</div>
+        <div class="fcard-cols">
+          <div>
+            <div class="fcard-ingr-title">Негизги ингредиенттер</div>
+            <ul class="fcard-ingr-list"><li>Заманбап UV-чыпкалар — UVA/UVB коргоо</li><li>Гиалурон кислотасы — нымдандыруу</li><li>Токоферол жана C витамини — антиоксиданттар</li><li>Өсүмдүк экстракттары — тынчтандыруу жана ыңгайлуулук</li><li>Жеңил текстура — макияждын алдында жана күн сайынгы кароого</li></ul>
+          </div>
+          <div class="fcard-price-box">
+            <div class="fcard-price-title">Баасы</div>
+            <div class="price-ru">65 $</div>
+          </div>
+        </div>
+        <div class="fcard-usage-title">Колдонуу ыкмасы</div>
+        <div class="fcard-usage">Күнгө чыгаардан 15–20 мүнөт мурун тазаланган бет терисине сүйкөңүз. Күндө узак болгондо ар 2 сааттан жаңылап туруңуз. Күн сайын колдонууга ылайыктуу.</div>
+        <div class="fcard-warning"><b>Көңүл буруңуз!</b> Тек «Жимон Групп» компаниясынын расмий дүкөнүндө сатылат. Жасалма товарлардан этияттаныңыз. Косметикалык каражат болуп саналат. Дары каражаты эмес. Көзгө тийбөөсүн көзөмөлдөңүз.</div>
+        <div class="fcard-actions">
+          <span class="pcard-more" onclick="toggleDesc(this)">толук маалымат</span>
+          <button class="pcard-ask" data-key="product-9" onclick="openPengModalByKey(this)">Пэндан суроо →</button>
+        </div>
       </div></div>
-      <div class="pcard">
-      <div class="pcard-img-wrap"><img src="/images/product-10.png" alt="КЭЛЭШУ (科集桂) · Травяной массажный крем двойного действия" loading="lazy" onerror="this.parentElement.style.display='none'"></div>
-      <div class="pcard-body">
-      <div class="pcard-brand">КЭЛЭШУ (科集桂) · Травяной массажный крем двойного действия</div>
-      <div class="pcard-short">Муундар · массаж</div>
-      <div class="pcard-hook">Сегиз түрдөгү таза эфир майлары жана кытай чөптөрүнүн экстракттары негизиндеги чөптүү массаж кремі. 100 г, тышкы колдонуу.</div>
-      <div class="pcard-actions">
-     <a href="/kelesu.html" class="pcard-more">толук маалымат →</a>
-      <button class="pcard-ask" data-key="product-10" onclick="openPengModalByKey(this)">Спросить Пэн →</button>
-      </div>
-      <div class="pcard-desc">Облегчение мышечной и суставной боли после долгого сидения, стояния или физических нагрузок.</div>
+      <div class="fcard">
+      <div class="fcard-img-wrap"><img src="/images/product-10.jpg" alt="Бирунканг (Детокс) Прессованные конфеты с листом лотоса и боярышником" loading="lazy" onerror="this.parentElement.style.display='none'"></div>
+      <div class="fcard-body">
+        <div class="fcard-name">«Бирунканг (Детокс)»</div>
+        <div class="fcard-subtitle">Лотос жалбырагы жана долоно менен пресстелген кэмпиттер</div>
+        <div class="fcard-volume">21 г · ар бири 0,7 г 30 таблетка</div>
+        <div class="fcard-desc">Лотос жалбырагы жана долоно негизиндеги табигый продукт. Тамак сиңирүүнү натыйжалуу жакшыртат, салмакты көзөмөлдөөгө жардам берет, организмди жумшак тазалайт жана дени сак зат алмашууну колдойт. Күн сайынгы жеңилдик жана ден соолукка кам көрүү үчүн бай өсүмдүк курамы.</div>
+        <div class="fcard-cols">
+          <div>
+            <div class="fcard-ingr-title">Негизги ингредиенттер</div>
+            <ul class="fcard-ingr-list"><li>Лотос жалбырагы — зат алмашууну колдоо жана салмакты көзөмөлдөө</li><li>Долоно — жүрөк жана кан тамырлардын ден соолугу, тамак сиңирүүнү жакшыртуу</li><li>Кассия уругу — жумшак тазалоо жана детокс</li><li>Пория (фулин) жана коикс уругу — тамак сиңирүүнү колдоо</li><li>Хризантема жана улун — тонус жана антиоксиданттык коргоо</li></ul>
+          </div>
+          <div class="fcard-price-box">
+            <div class="fcard-price-title">Баасы</div>
+            <div class="price-ru">65 $</div>
+          </div>
+        </div>
+        <div class="fcard-usage-title">Колдонуу ыкмасы</div>
+        <div class="fcard-usage">Күнүнө 1 жолу эртең менен, 2–3 таблеткадан. Жылуу суу менен ичиңиз.</div>
+        <div class="fcard-warning"><b>Көңүл буруңуз!</b> Тек «Жимон Групп» компаниясынын расмий дүкөнүндө сатылат. Жасалма товарлардан этияттаныңыз. Балдарга, кош бойлуу жана эмчек эмизген аялдарга, аллергиясы бар адамдарга сунушталбайт. Жарактуулук мөөнөтү 24 ай. Кургак, желдетилүүчү жерде сактаңыз.</div>
+        <div class="fcard-actions">
+          <a href="/birunkang.html" class="pcard-more">подробнее →</a>
+          <button class="pcard-ask" data-key="product-10" onclick="openPengModalByKey(this)">Пэндан суроо →</button>
+        </div>
       </div></div>
-      <div class="pcard">
-      <div class="pcard-img-wrap"><img src="/images/product-11.png" alt="AZEYIHUANG (阿泽益黄) · «Король иммунитета» Цикорий" loading="lazy" onerror="this.parentElement.style.display='none'"></div>
-      <div class="pcard-body">
-      <div class="pcard-brand">AZEYIHUANG (阿泽益黄) · «Король иммунитета» Цикорий</div>
-      <div class="pcard-short">Иммунитет · цикорий</div>
-      <div class="pcard-hook">Цикорий негизиндеги чайнама таблеткалар. Цикорий тамырында 70%ке чейин инулин бар. 0,3 г 50 таблетка.</div>
-      <div class="pcard-actions">
-     <a href="/azeyihuang.html" class="pcard-more">толук маалымат →</a>
-      <button class="pcard-ask" data-key="product-11" onclick="openPengModalByKey(this)">Спросить Пэн →</button>
-      </div>
-      <div class="pcard-desc">Современная наука называет кишечник «вторым мозгом» — 70–80% иммунных клеток организма находятся именно там.</div>
+      <div class="fcard">
+      <div class="fcard-img-wrap"><img src="/images/product-11.jpg" alt="Сянь Юнь Ю (Жиротоп) Прессованные конфеты с фруктово-овощным порошком" loading="lazy" onerror="this.parentElement.style.display='none'"></div>
+      <div class="fcard-body">
+        <div class="fcard-name">«Сянь Юнь Ю (Жиротоп)»</div>
+        <div class="fcard-subtitle">Мөмө-жашылча порошогу менен пресстелген кэмпиттер</div>
+        <div class="fcard-volume">30 г · ар бири 1 г 30 таблетка</div>
+        <div class="fcard-desc">Мөмө-жашылча порошоктору, женьшень жана суперфудалар негизиндеги табигый продукт. Салмакты көзөмөлдөөгө жардам берет, май жана углевод алмашуусун жөнгө салат, ашыкча тамактанууга болгон умтулууну азайтат жана тойгондук сезимин узартат. Күн сайын жеңилдик жана энергия тартуулайт. Ашыкча кантсыз бай өсүмдүк курамы — сымбат, тонус жана өзүнө күн сайынгы кам көрүү үчүн.</div>
+        <div class="fcard-cols">
+          <div>
+            <div class="fcard-ingr-title">Негизги ингредиенттер</div>
+            <ul class="fcard-ingr-list"><li>Көк карагат жана быламык порошогу — антиоксиданттар жана даам</li><li>Женьшень порошогу — энергия жана тонус</li><li>Инулин жана сулу β-глюканы — тамак сиңирүүнү колдоо жана тойгондук</li><li>Ак буурчак жана кассия уругунун порошогу — тамактануну көзөмөлдөө жана детокс</li><li>Жашыл кофе жана пуэрария — метаболизмди тездетүү</li></ul>
+          </div>
+          <div class="fcard-price-box">
+            <div class="fcard-price-title">Баасы</div>
+            <div class="price-ru">65 $</div>
+          </div>
+        </div>
+        <div class="fcard-usage-title">Колдонуу ыкмасы</div>
+        <div class="fcard-usage">Күнүнө 1–2 таблетка, тамактангандан кийин. Чайнап жегиле.</div>
+        <div class="fcard-warning"><b>Көңүл буруңуз!</b> Тек «Жимон Групп» компаниясынын расмий дүкөнүндө сатылат. Жасалма товарлардан этияттаныңыз. 14 жашка чейинки балдарга, кош бойлуу жана эмчек эмизген аялдарга, аллергиясы бар адамдарга сунушталбайт. Жарактуулук мөөнөтү 24 ай. Салкын, кургак жерде сактаңыз.</div>
+        <div class="fcard-actions">
+          <a href="/xianyunyu.html" class="pcard-more">подробнее →</a>
+          <button class="pcard-ask" data-key="product-11" onclick="openPengModalByKey(this)">Пэндан суроо →</button>
+        </div>
       </div></div>
-      <div class="pcard">
-      <div class="pcard-img-wrap"><img src="/images/product-12.png" alt="Тун Юань Бао Цин (同源葆青) · «Создатель стволовых клеток»" loading="lazy" onerror="this.parentElement.style.display='none'"></div>
-      <div class="pcard-body">
-      <div class="pcard-brand">Тун Юань Бао Цин (同源葆青) · «Создатель стволовых клеток»</div>
-      <div class="pcard-short">Клеткаларды жаштандыруу</div>
-      <div class="pcard-hook">Уй сөөк чучугунун пептиди негизиндеги инновациялык комплекс. 0,9 г 90 таблетка — клеткаларды колдоонун үч айлык курсу.</div>
-      <div class="pcard-actions">
-     <a href="/tunyuanbaoqing.html" class="pcard-more">толук маалымат →</a>
-      <button class="pcard-ask" data-key="product-12" onclick="openPengModalByKey(this)">Спросить Пэн →</button>
-      </div>
-      <div class="pcard-desc">Костный мозг — «фабрика жизни» внутри тела, именно здесь рождаются стволовые клетки.</div>
+      <div class="fcard">
+      <div class="fcard-img-wrap"><img src="/images/product-12.jpg" alt="Сюэланьдо (Кровочистка) Прессованные конфеты с ашитабой и натто" loading="lazy" onerror="this.parentElement.style.display='none'"></div>
+      <div class="fcard-body">
+        <div class="fcard-name">«Сюэланьдо (Кровочистка)»</div>
+        <div class="fcard-subtitle">Ашитаба жана натто менен пресстелген кэмпиттер</div>
+        <div class="fcard-volume">42 г · ар бири 0,7 г 60 таблетка</div>
+        <div class="fcard-desc">Ашитаба жана натто негизиндеги табигый продукт. Кан басымын турукташтырат жана кандагы кантты нормалдаштырат. Дени сак кан айланууну колдойт, кан тамырларды тазалайт, зат алмашууну нормалдаштырууга жардам берет жана организмдин жалпы тонусун жогорулатат. Ден соолукка күн сайынгы кам көрүү үчүн бай өсүмдүк курамы.</div>
+        <div class="fcard-cols">
+          <div>
+            <div class="fcard-ingr-title">Негизги ингредиенттер</div>
+            <ul class="fcard-ingr-list"><li>Ашитаба — күчтүү антиоксидант, метаболизмди колдоо</li><li>Натто порошогу — кан тамырлар жана кан айлануу үчүн наттокиназа</li><li>Инулин — ичегинин микрофлорасы үчүн пребиотик</li><li>Жүгөрү мурутунун жана кассия уругунун порошогу — детокс жана теңдем</li></ul>
+          </div>
+          <div class="fcard-price-box">
+            <div class="fcard-price-title">Баасы</div>
+            <div class="price-ru">90 $</div>
+          </div>
+        </div>
+        <div class="fcard-usage-title">Колдонуу ыкмасы</div>
+        <div class="fcard-usage">Эртең менен жана кечинде 1 жолудан, 1–2 таблеткадан. Жылуу суу менен ичиңиз.</div>
+        <div class="fcard-warning"><b>Көңүл буруңуз!</b> Тек «Жимон Групп» компаниясынын расмий дүкөнүндө сатылат. Жасалма товарлардан этияттаныңыз. Балдарга, кош бойлуу жана эмчек эмизген аялдарга, аллергиясы бар адамдарга сунушталбайт. Жарактуулук мөөнөтү 24 ай. Кургак, желдетилүүчү жерде сактаңыз.</div>
+        <div class="fcard-actions">
+          <a href="/xuelanduo.html" class="pcard-more">подробнее →</a>
+          <button class="pcard-ask" data-key="product-12" onclick="openPengModalByKey(this)">Пэндан суроо →</button>
+        </div>
       </div></div>
-      <div class="pcard">
-      <div class="pcard-img-wrap"><img src="/images/product-13.png" alt="ЮАНЬЮНЬ (媛韵牌) · Антибактериальный глазной стик «Кушень»" loading="lazy" onerror="this.parentElement.style.display='none'"></div>
-      <div class="pcard-body">
-      <div class="pcard-brand">ЮАНЬЮНЬ (媛韵牌) · Антибактериальный глазной стик «Кушень»</div>
-      <div class="pcard-short">Көз · чарчоо</div>
-      <div class="pcard-hook">Софора тамыры жана ментол негизиндеги өсүмдүк бактериостатикалык эритмеси бар компакттуу алтын стик. 10 мл.</div>
-      <div class="pcard-actions">
-      <a href="/yuanyun.html" class="pcard-more">толук маалымат →</a>
-      <button class="pcard-ask" data-key="product-13" onclick="openPengModalByKey(this)">Спросить Пэн →</button>
-      </div>
-      <div class="pcard-desc">Глаза первыми устают в мире экранов — стик возвращает комфорт без капель и без спешки в аптеку.</div>
+      <div class="fcard">
+      <div class="fcard-img-wrap"><img src="/images/product-13.jpg" alt="Льняная коллагеновая каша (Шаньлинэн) 2 коробки" loading="lazy" onerror="this.parentElement.style.display='none'"></div>
+      <div class="fcard-body">
+        <div class="fcard-name">«Льняная коллагеновая каша (Шаньлинэн)»</div>
+        <div class="fcard-subtitle">2 куту</div>
+        <div class="fcard-volume">300 г · ар бири 30 г 30 саше</div>
+        <div class="fcard-desc">Зыгыр үрөнү жана коллаген пептиддери негизиндеги табигый продукт. Теринин серпилгичтиги менен ийкемдүүлүгүн колдойт, чач жана тырмактарды бекемдейт, тамак сиңирүү жана ичегинин иштешин колдойт, зат алмашууну нормалдаштырууга өбөлгө түзөт, тойгондук сезимин колдоого жардам берет. Сулуулук, жеңилдик жана ден соолукка күн сайынгы кам көрүү үчүн өсүмдүк белогунун жана клетчатканын булагы.</div>
+        <div class="fcard-cols">
+          <div>
+            <div class="fcard-ingr-title">Негизги ингредиенттер</div>
+            <ul class="fcard-ingr-list"><li>Зыгыр уругунун порошогу — омега-3 жана тамактык була</li><li>Коллаген пептиддери — тери, чач жана тырмакты колдоо</li><li>Сулу уну жана карамык — энергия жана тойгондук</li><li>Пория жана ак буурчак — жумшак тазалоо</li><li>E витамини — антиоксиданттык коргоо</li></ul>
+          </div>
+          <div class="fcard-price-box">
+            <div class="fcard-price-title">Баасы</div>
+            <div class="price-ru">73 $</div>
+          </div>
+        </div>
+        <div class="fcard-usage-title">Колдонуу ыкмасы</div>
+        <div class="fcard-usage">1 пакетчени 150 мл жылуу сууда эритиңиз. Жакшылап аралаштырып ичиңиз.</div>
+        <div class="fcard-warning"><b>Көңүл буруңуз!</b> Тек «Жимон Групп» компаниясынын расмий дүкөнүндө сатылат. Жасалма товарлардан этияттаныңыз. Курамында глютен жана жаңгак бар — аллергияда этияттык менен. Салкын жерде сактаңыз. Жарактуулук мөөнөтү 18 ай.</div>
+        <div class="fcard-actions">
+          <a href="/shanlineng.html" class="pcard-more">подробнее →</a>
+          <button class="pcard-ask" data-key="product-13" onclick="openPengModalByKey(this)">Пэндан суроо →</button>
+        </div>
       </div></div>
-      <div class="pcard">
-      <div class="pcard-img-wrap"><img src="/images/product-14.png" alt="SULRANCHO (雪兰草) · Антивозрастной мист «Снежная Орхидея»" loading="lazy" onerror="this.parentElement.style.display='none'"></div>
-      <div class="pcard-body">
-      <div class="pcard-brand">SULRANCHO (雪兰草) · Антивозрастной мист «Снежная Орхидея»</div>
-      <div class="pcard-short">Карылыкка каршы мист</div>
-      <div class="pcard-hook">Кар орхидеясынын экстракты, 4 пептид жана фуллерен менен беттик көп функциялуу спрей-кароо. 120 мл.</div>
-      <div class="pcard-actions">
-      <a href="/sulrancho.html" class="pcard-more">толук маалымат →</a>
-      <button class="pcard-ask" data-key="product-14" onclick="openPengModalByKey(this)">Спросить Пэн →</button>
-      </div>
-      <div class="pcard-desc">Разглаживает морщинки, возвращает ровный тон, сужает поры, насыщает влагой — за секунды, дома или в дороге.</div>
+      <div class="fcard">
+      <div class="fcard-img-wrap"><img src="/images/product-14.jpg" alt="Коллагеновые пептиды (Шаньлинэн) " loading="lazy" onerror="this.parentElement.style.display='none'"></div>
+      <div class="fcard-body">
+        <div class="fcard-name">«Коллагеновые пептиды (Шаньлинэн)»</div>
+        
+        <div class="fcard-volume">200 г · ар бири 10 г 20 саше</div>
+        <div class="fcard-desc">Жогорку сапаттагы коллаген пептиддери негизиндеги табигый продукт. Теринин серпилгичтиги менен ийкемдүүлүгүн колдойт, териni ичинен нымдандырууга өбөлгө түзөт, чач жана тырмактардын ден соолугун колдойт. Оңой сиңет, жагымдуу даам — сулуулук жана жаштыкка күн сайынгы кам көрүү үчүн.</div>
+        <div class="fcard-cols">
+          <div>
+            <div class="fcard-ingr-title">Негизги ингредиенттер</div>
+            <ul class="fcard-ingr-list"><li>Коллаген пептиддери — тери, чач жана тырмакты колдоо</li><li>Таза кокос порошогу — жагымдуу даам жана азыктануу</li><li>Трегалоза — клеткаларды коргоо жана жумшак таттуулук</li><li>Кристаллдык фруктоза — табигый энергия булагы</li></ul>
+          </div>
+          <div class="fcard-price-box">
+            <div class="fcard-price-title">Баасы</div>
+            <div class="price-ru">65 $</div>
+          </div>
+        </div>
+        <div class="fcard-usage-title">Колдонуу ыкмасы</div>
+        <div class="fcard-usage">1 пакетчени 150 мл жылуу же ысык сууда эритиңиз. Күнүнө 1 жолу ичиңиз.</div>
+        <div class="fcard-warning"><b>Көңүл буруңуз!</b> Тек «Жимон Групп» компаниясынын расмий дүкөнүндө сатылат. Жасалма товарлардан этияттаныңыз. Дары эмес. Салкын, кургак жерде сактаңыз. Жарактуулук мөөнөтү 24 ай.</div>
+        <div class="fcard-actions">
+          <a href="/shanlineng-napitok.html" class="pcard-more">подробнее →</a>
+          <button class="pcard-ask" data-key="product-14" onclick="openPengModalByKey(this)">Пэндан суроо →</button>
+        </div>
+      </div></div>
+      <div class="fcard">
+      <div class="fcard-img-wrap"><img src="/images/product-15.jpg" alt="«Питательная основа» для суставов и костей " loading="lazy" onerror="this.parentElement.style.display='none'"></div>
+      <div class="fcard-body">
+        <div class="fcard-name">«Азыктык негиз» муундар жана сөөктөргө</div>
+        
+        <div class="fcard-volume">120 г · ар бири 6 г 20 саше</div>
+        <div class="fcard-desc">Муундар жана сөөктөрдүн ден соолугу үчүн табигый азыктык негиз. Муундардын кыймылдуулугун жана ыңгайлуулугун колдойт, сөөк ткандын бекемделишине өбөлгө түзөт, катуулук сезимин азайтууга жардам берет жана байламта ткан менен кемирчекти колдойт. Кыймылдын күн сайынгы жеңилдиги жана таяныч-кыймыл аппаратына кам көрүү үчүн.</div>
+        <div class="fcard-cols">
+          <div>
+            <div class="fcard-ingr-title">Негизги ингредиенттер</div>
+            <ul class="fcard-ingr-list"><li>Өсүмдүк компоненттери — муундарды колдоо</li><li>Сөөк ткандын бекемделиши</li><li>Катуулук сезимин азайтуу</li><li>Байламта ткан жана кемирчекти колдоо</li><li>Ыңгайлуу саше форматы — күн сайынгы кабыл алуу</li></ul>
+          </div>
+          <div class="fcard-price-box">
+            <div class="fcard-price-title">Баасы</div>
+            <div class="price-ru">65 $</div>
+          </div>
+        </div>
+        <div class="fcard-usage-title">Колдонуу ыкмасы</div>
+        <div class="fcard-usage">1 сашени жылуу сууда эритиңиз. Күнүнө 1 жолу кабыл алыңыз.</div>
+        <div class="fcard-warning"><b>Көңүл буруңуз!</b> Тек «Жимон Групп» компаниясынын расмий дүкөнүндө сатылат. Жасалма товарлардан этияттаныңыз. Дары каражаты эмес. Салкын, кургак жерде сактаңыз.</div>
+        <div class="fcard-actions">
+          <a href="/shanlineng-sustav.html" class="pcard-more">подробнее →</a>
+          <button class="pcard-ask" data-key="product-15" onclick="openPengModalByKey(this)">Пэндан суроо →</button>
+        </div>
+      </div></div>
+      <div class="fcard">
+      <div class="fcard-img-wrap"><img src="/images/product-16.jpg" alt="Конфеты с женьшенем и хуанцзин " loading="lazy" onerror="this.parentElement.style.display='none'"></div>
+      <div class="fcard-body">
+        <div class="fcard-name">«Женьшень жана хуанцзин менен кэмпиттер»</div>
+        
+        <div class="fcard-volume">12 г · ар бири 0,6 г 20 таблетка</div>
+        <div class="fcard-desc">Женьшень жана хуанцзин экстрактысынын негизинде ыңгайлуу пресстелген кэмпиттер. Энергия деңгээлин жана эмгекке жөндөмдүүлүктү колдойт, чарчоо сезимин азайтууга жардам берет жана иммунитетти бекемдөөгө өбөлгө түзөт. Жагымдуу формат — күн сайынгы сергектик жана тонус үчүн жөн гана күнүнө 1–2 таблетка соруңуз.</div>
+        <div class="fcard-cols">
+          <div>
+            <div class="fcard-ingr-title">Негизги ингредиенттер</div>
+            <ul class="fcard-ingr-list"><li>Женьшень экстракты — энергия жана тонус</li><li>Хуанцзин (Polygonatum) — иммунитетти колдоо</li><li>Өсүмдүк компоненттери — кешенди колдоо</li><li>Чарчоо сезимин азайтуу</li><li>Ыңгайлуу таблетка форматы — күн сайынгы кабыл алуу</li></ul>
+          </div>
+          <div class="fcard-price-box">
+            <div class="fcard-price-title">Баасы</div>
+            <div class="price-ru">90 $</div>
+          </div>
+        </div>
+        <div class="fcard-usage-title">Колдонуу ыкмасы</div>
+        <div class="fcard-usage">Күнүнө 1–2 таблетка, оозунда эритип кабыл алыңыз.</div>
+        <div class="fcard-warning"><b>Көңүл буруңуз!</b> Тек «Жимон Групп» компаниясынын расмий дүкөнүндө сатылат. Жасалма товарлардан этияттаныңыз. Дары каражаты эмес. Салкын, кургак жерде сактаңыз.</div>
+        <div class="fcard-actions">
+          <a href="/mayou.html" class="pcard-more">подробнее →</a>
+          <button class="pcard-ask" data-key="product-16" onclick="openPengModalByKey(this)">Пэндан суроо →</button>
+        </div>
+      </div></div>
+      <div class="fcard">
+      <div class="fcard-img-wrap"><img src="/images/product-17.jpg" alt="Гелевые конфеты с маслом семян клёна (Мозговой) " loading="lazy" onerror="this.parentElement.style.display='none'"></div>
+      <div class="fcard-body">
+        <div class="fcard-name">«Карагай уругунун майы менен гель кэмпиттер (Мээ)»</div>
+        
+        <div class="fcard-volume">30 г · ар бири 0,5 г 60 кэмпит</div>
+        <div class="fcard-desc">Мээ жана нерв системасына күчтүү колдоо. Ой жүгүртүүнүн тактыгы, көңүл буруу жана нейрондорду коргоо үчүн негизги компонент — карагай уруктарынын майынан алынган нервон кислотасына бай. Акыл-эстин курчтугун сактоого жардам берет, акыл эмгегинин чарчоосун азайтат жана нерв системасынын иштешин күн сайын колдойт. Таза акыл-эс жана өндүрүмдүүлүктү баалагандар үчүн кантсыз ыңгайлуу формат.</div>
+        <div class="fcard-cols">
+          <div>
+            <div class="fcard-ingr-title">Негизги ингредиенттер</div>
+            <ul class="fcard-ingr-list"><li>Карагай уругунун майы — нервон кислотасынын булагы</li><li>Нервон кислотасы — нейрондорду коргоо жана азыктандыруу</li><li>Нерв системасын жана көңүл бурууну колдоо</li><li>Ой жүгүртүүнүн тактыгы жана акыл эмгегинин чарчоосун азайтуу</li><li>Ыңгайлуу кантсыз формат</li></ul>
+          </div>
+          <div class="fcard-price-box">
+            <div class="fcard-price-title">Баасы</div>
+            <div class="price-ru">65 $</div>
+          </div>
+        </div>
+        <div class="fcard-usage-title">Колдонуу ыкмасы</div>
+        <div class="fcard-usage">Күнүнө 1–2 кэмпит кабыл алыңыз.</div>
+        <div class="fcard-warning"><b>Көңүл буруңуз!</b> Тек «Жимон Групп» компаниясынын расмий дүкөнүндө сатылат. Жасалма товарлардан этияттаныңыз. Дары каражаты эмес. Салкын, кургак жерде сактаңыз.</div>
+        <div class="fcard-actions">
+          <span class="pcard-more" onclick="toggleDesc(this)">толук маалымат</span>
+          <button class="pcard-ask" data-key="product-17" onclick="openPengModalByKey(this)">Пэндан суроо →</button>
+        </div>
+      </div></div>
+      <div class="fcard">
+      <div class="fcard-img-wrap"><img src="/images/product-18.jpg" alt="«Напиток с куркумой» для поддержки печени " loading="lazy" onerror="this.parentElement.style.display='none'"></div>
+      <div class="fcard-body">
+        <div class="fcard-name">«Куркумалуу суусундук» боорду колдоого</div>
+        
+        <div class="fcard-volume">500 мл · ар бири 25 мл 20 саше</div>
+        <div class="fcard-desc">Боордун белок пептиди жана куркума тамырынын экстрактысынын негизинде табигый суусундук. Боордун иштешин колдойт, организмдин табигый тазалануусуна өбөлгө түзөт, тамактангандан кийинки оордук сезимин азайтууга жардам берет жана зат алмашууну колдойт. Боорго жана жеңилдикке күн сайынгы кам көрүү үчүн.</div>
+        <div class="fcard-cols">
+          <div>
+            <div class="fcard-ingr-title">Негизги ингредиенттер</div>
+            <ul class="fcard-ingr-list"><li>Боордун белок пептиди — боорду колдоо</li><li>Куркума тамырынын экстракты — тазалоо жана тонус</li><li>Өсүмдүк компоненттери — кешенди колдоо</li><li>Тамактангандан кийинки оордукту азайтуу</li><li>Ичүүгө даяр формат</li></ul>
+          </div>
+          <div class="fcard-price-box">
+            <div class="fcard-price-title">Баасы</div>
+            <div class="price-ru">109 $</div>
+          </div>
+        </div>
+        <div class="fcard-usage-title">Колдонуу ыкмасы</div>
+        <div class="fcard-usage">Күнүнө 1 саше кабыл алыңыз. Суусундук ичүүгө даяр, суу менен суюлтуунун кереги жок.</div>
+        <div class="fcard-warning"><b>Көңүл буруңуз!</b> Тек «Жимон Групп» компаниясынын расмий дүкөнүндө сатылат. Жасалма товарлардан этияттаныңыз. Дары каражаты эмес. Салкын, кургак жерде сактаңыз.</div>
+        <div class="fcard-actions">
+          <span class="pcard-more" onclick="toggleDesc(this)">толук маалымат</span>
+          <button class="pcard-ask" data-key="product-18" onclick="openPengModalByKey(this)">Пэндан суроо →</button>
+        </div>
+      </div></div>
+      <div class="fcard">
+      <div class="fcard-img-wrap"><img src="/images/product-19.jpg" alt="«Растительный напиток» для защиты горла " loading="lazy" onerror="this.parentElement.style.display='none'"></div>
+      <div class="fcard-body">
+        <div class="fcard-name">«Өсүмдүк суусундугу» тамакты коргоого</div>
+        
+        <div class="fcard-volume">500 мл · ар бири 25 мл 20 саше</div>
+        <div class="fcard-desc">Тамактын жана үн байламтасынын ыңгайлуулугу үчүн табигый өсүмдүк суусундугу. Кургактык жана кычышуу сезимин жумшартат, үн жүктөмү жогору болгондо ыңгайлуулукту колдойт, сергитет жана жеңилдик сезимин калтырат. Үн жана тамакка күн сайынгы кам көрүүгө сонун.</div>
+        <div class="fcard-cols">
+          <div>
+            <div class="fcard-ingr-title">Негизги ингредиенттер</div>
+            <ul class="fcard-ingr-list"><li>Өсүмдүк компоненттери — тамакты жумшак коргоо</li><li>Кургактык жана кычышуну жумшартуу</li><li>Үн байламталарынын ыңгайлуулугун колдоо</li><li>Үн жүктөмүндө жардам</li><li>Ичүүгө даяр формат</li></ul>
+          </div>
+          <div class="fcard-price-box">
+            <div class="fcard-price-title">Баасы</div>
+            <div class="price-ru">109 $</div>
+          </div>
+        </div>
+        <div class="fcard-usage-title">Колдонуу ыкмасы</div>
+        <div class="fcard-usage">Күнүнө 1 саше кабыл алыңыз. Суусундук ичүүгө даяр, суу менен суюлтуунун кереги жок.</div>
+        <div class="fcard-warning"><b>Көңүл буруңуз!</b> Тек «Жимон Групп» компаниясынын расмий дүкөнүндө сатылат. Жасалма товарлардан этияттаныңыз. Дары каражаты эмес. Салкын, кургак жерде сактаңыз.</div>
+        <div class="fcard-actions">
+          <span class="pcard-more" onclick="toggleDesc(this)">толук маалымат</span>
+          <button class="pcard-ask" data-key="product-19" onclick="openPengModalByKey(this)">Пэндан суроо →</button>
+        </div>
+      </div></div>
+      <div class="fcard">
+      <div class="fcard-img-wrap"><img src="/images/product-20.jpg" alt="«Питательный напиток» для красоты кожи " loading="lazy" onerror="this.parentElement.style.display='none'"></div>
+      <div class="fcard-body">
+        <div class="fcard-name">«Азыктык суусундук» терини сулуулантууга</div>
+        
+        <div class="fcard-volume">300 мл · ар бири 30 мл 10 саше</div>
+        <div class="fcard-desc">Териni ичинен сулуулантуу үчүн табигый азыктык суусундук. Серпилгичтикти жана нымдуулукту колдойт, түстүн теңдигине жана табигый жаркырообуна өбөлгө түзөт, кургактык сезимин азайтууга жардам берет. Өсүмдүк компоненттери териni жаңылоо үчүн иштейт — күн сайын жаңы, дени сак жана жаркыраган көрүнүш үчүн.</div>
+        <div class="fcard-cols">
+          <div>
+            <div class="fcard-ingr-title">Негизги ингредиенттер</div>
+            <ul class="fcard-ingr-list"><li>Өсүмдүк компоненттери — териni ичинен азыктандыруу</li><li>Серпилгичтик жана нымдуулукту колдоо</li><li>Түстүн теңдиги жана табигый жаркыроо</li><li>Кургактык сезимин азайтуу</li><li>Ыңгайлуу саше форматы — күн сайынгы кабыл алуу</li></ul>
+          </div>
+          <div class="fcard-price-box">
+            <div class="fcard-price-title">Баасы</div>
+            <div class="price-ru">65 $</div>
+          </div>
+        </div>
+        <div class="fcard-usage-title">Колдонуу ыкмасы</div>
+        <div class="fcard-usage">Күнүнө 1 саше кабыл алыңыз.</div>
+        <div class="fcard-warning"><b>Көңүл буруңуз!</b> Тек «Жимон Групп» компаниясынын расмий дүкөнүндө сатылат. Жасалма товарлардан этияттаныңыз. Дары каражаты эмес. Салкын, кургак жерде сактаңыз.</div>
+        <div class="fcard-actions">
+          <span class="pcard-more" onclick="toggleDesc(this)">толук маалымат</span>
+          <button class="pcard-ask" data-key="product-20" onclick="openPengModalByKey(this)">Пэндан суроо →</button>
+        </div>
+      </div></div>
+      <div class="fcard">
+      <div class="fcard-img-wrap"><img src="/images/product-21.jpg" alt="Luoxango Растительный напиток (Плод монаха)" loading="lazy" onerror="this.parentElement.style.display='none'"></div>
+      <div class="fcard-body">
+        <div class="fcard-name">«Luoxango»</div>
+        <div class="fcard-subtitle">Өсүмдүк суусундугу (Монах жемиши)</div>
+        <div class="fcard-volume">100 мл · ар бири 50 мл 2 бөтөлкө</div>
+        <div class="fcard-desc">Монах жемишинин (архат) экстрактысынын негизинде табигый өсүмдүк суусундугу. Ашказан жана тамак сиңирүү иштешин жумшак колдойт, тамактангандан кийинки оордук сезимин алат, тамакты нымдандырат жана кургактыгын жумшартат. Сергитет, жеңилдик жана ыңгайлуулукту тартуулайт. Суюлтуунун кереги жок ичүүгө даяр суусундук — тамак сиңирүү жана тамакка күн сайынгы кам көрүүнүн сонун ырасымы.</div>
+        <div class="fcard-cols">
+          <div>
+            <div class="fcard-ingr-title">Негизги ингредиенттер</div>
+            <ul class="fcard-ingr-list"><li>Архат жемишинин (монах жемиши) экстракты — тамак сиңирүүнү колдоо</li><li>Тамактагы кургактыкты жумшартуу</li><li>Тамактангандан кийинки оордук сезимин азайтуу</li><li>Сергитүүчү эффект жана жеңилдик</li><li>Ичүүгө даяр формат</li></ul>
+          </div>
+          <div class="fcard-price-box">
+            <div class="fcard-price-title">Баасы</div>
+            <div class="price-ru">109 $</div>
+          </div>
+        </div>
+        <div class="fcard-usage-title">Колдонуу ыкмасы</div>
+        <div class="fcard-usage">Күнүнө 1 бөтөлкө кабыл алыңыз. Суусундук ичүүгө даяр, суу менен суюлтуунун кереги жок.</div>
+        <div class="fcard-warning"><b>Көңүл буруңуз!</b> Тек «Жимон Групп» компаниясынын расмий дүкөнүндө сатылат. Жасалма товарлардан этияттаныңыз. Дары каражаты эмес. Салкын, кургак жерде сактаңыз.</div>
+        <div class="fcard-actions">
+          <span class="pcard-more" onclick="toggleDesc(this)">толук маалымат</span>
+          <button class="pcard-ask" data-key="product-21" onclick="openPengModalByKey(this)">Пэндан суроо →</button>
+        </div>
+      </div></div>
+      <div class="fcard">
+      <div class="fcard-img-wrap"><img src="/images/product-22.jpg" alt="«Напиток с дендробиумом» и женьшенем " loading="lazy" onerror="this.parentElement.style.display='none'"></div>
+      <div class="fcard-body">
+        <div class="fcard-name">«Дендробиумдуу суусундук» жана женьшень</div>
+        
+        <div class="fcard-volume">60 г · ар бири 2 г 30 саше</div>
+        <div class="fcard-desc">Дендробиум жана женьшень өсүндүлөрүнүн негизинде табигый суусундук. Энергия деңгээлин жана жашоо тонусун колдойт, организмди ичинен нымдандырууга өбөлгө түзөт, чарчоо сезимин азайтууга жардам берет жана иммунитетти колдойт. Күн сайынгы сергектик жана күчтү калыбына келтирүү үчүн.</div>
+        <div class="fcard-cols">
+          <div>
+            <div class="fcard-ingr-title">Негизги ингредиенттер</div>
+            <ul class="fcard-ingr-list"><li>Дендробиум порошогу — нымдандыруу жана тонус</li><li>Женьшень өсүндүлөрү — энергия жана жашоо күчтөрү</li><li>Өсүмдүк компоненттери — кешенди колдоо</li><li>Иммунитетти колдоо — табигый коргоо</li><li>Ыңгайлуу саше форматы — күн сайынгы кабыл алуу</li></ul>
+          </div>
+          <div class="fcard-price-box">
+            <div class="fcard-price-title">Баасы</div>
+            <div class="price-ru">65 $</div>
+          </div>
+        </div>
+        <div class="fcard-usage-title">Колдонуу ыкмасы</div>
+        <div class="fcard-usage">1 сашени жылуу сууда эритиңиз. Күнүнө 1 жолу кабыл алыңыз.</div>
+        <div class="fcard-warning"><b>Көңүл буруңуз!</b> Тек «Жимон Групп» компаниясынын расмий дүкөнүндө сатылат. Жасалма товарлардан этияттаныңыз. Дары каражаты эмес. Салкын, кургак жерде сактаңыз.</div>
+        <div class="fcard-actions">
+          <span class="pcard-more" onclick="toggleDesc(this)">толук маалымат</span>
+          <button class="pcard-ask" data-key="product-22" onclick="openPengModalByKey(this)">Пэндан суроо →</button>
+        </div>
+      </div></div>
+      <div class="fcard">
+      <div class="fcard-img-wrap"><img src="/images/product-23.jpg" alt="«Фанцин» Прессованные конфеты с цикорием" loading="lazy" onerror="this.parentElement.style.display='none'"></div>
+      <div class="fcard-body">
+        <div class="fcard-name">«Фанцин»</div>
+        <div class="fcard-subtitle">Цикорий менен пресстелген кэмпиттер</div>
+        <div class="fcard-volume">81 г · ар бири 0,9 г 90 таблетка</div>
+        <div class="fcard-desc">Цикорий тамырынын экстрактысынын негизинде ыңгайлуу пресстелген кэмпиттер. Организмдин табигый коргонуу күчтөрүн колдойт, зат алмашууну нормалдаштырууга өбөлгө түзөт жана энергия деңгээлин колдоого жардам берет. Жагымдуу формат — ден соолукка күн сайынгы кам көрүү үчүн жөн гана күнүнө 1–2 таблетка соруңуз.</div>
+        <div class="fcard-cols">
+          <div>
+            <div class="fcard-ingr-title">Негизги ингредиенттер</div>
+            <ul class="fcard-ingr-list"><li>Цикорий тамырынын экстракты — иммунитетти колдоо</li><li>Өсүмдүк компоненттери — кешенди колдоо</li><li>Зат алмашууну нормалдаштыруу — жеңилдик</li><li>Ыңгайлуу таблетка форматы — күн сайынгы кабыл алуу</li><li>Жогорку биожеткиликтүүлүк — тез эффект</li></ul>
+          </div>
+          <div class="fcard-price-box">
+            <div class="fcard-price-title">Баасы</div>
+            <div class="price-ru">65 $</div>
+          </div>
+        </div>
+        <div class="fcard-usage-title">Колдонуу ыкмасы</div>
+        <div class="fcard-usage">Күнүнө 1–2 таблетка, оозунда эритип кабыл алыңыз.</div>
+        <div class="fcard-warning"><b>Көңүл буруңуз!</b> Тек «Жимон Групп» компаниясынын расмий дүкөнүндө сатылат. Жасалма товарлардан этияттаныңыз. Дары каражаты эмес.</div>
+        <div class="fcard-actions">
+          <span class="pcard-more" onclick="toggleDesc(this)">толук маалымат</span>
+          <button class="pcard-ask" data-key="product-23" onclick="openPengModalByKey(this)">Пэндан суроо →</button>
+        </div>
+      </div></div>
+      <div class="fcard">
+      <div class="fcard-img-wrap"><img src="/images/product-24.jpg" alt="«Порошок с цикорием» Для иммунитета" loading="lazy" onerror="this.parentElement.style.display='none'"></div>
+      <div class="fcard-body">
+        <div class="fcard-name">«Цикорий порошогу»</div>
+        <div class="fcard-subtitle">Иммунитет үчүн</div>
+        <div class="fcard-volume">71 г · ар бири 0,9 г 80 саше</div>
+        <div class="fcard-desc">Цикорий тамырынын экстрактысы жана инулин негизиндеги табигый порошок. Организмдин табигый коргонуу күчтөрүн колдойт, ичегинин дени сак микрофлорасына өбөлгө түзөт, энергия деңгээлин колдоого жардам берет. Ичинен ден соолукка күн сайынгы кам көрүү үчүн өсүмдүк клетчаткасынын бай булагы.</div>
+        <div class="fcard-cols">
+          <div>
+            <div class="fcard-ingr-title">Негизги ингредиенттер</div>
+            <ul class="fcard-ingr-list"><li>Цикорий тамырынын экстракты — иммунитетти колдоо</li><li>Инулин — микрофлорага пребиотик</li><li>Өсүмдүк компоненттери — кешенди колдоо</li><li>Клетчатканын булагы — тамак сиңирүүнүн ыңгайлуулугу</li><li>Ыңгайлуу саше форматы — күн сайынгы кабыл алуу</li></ul>
+          </div>
+          <div class="fcard-price-box">
+            <div class="fcard-price-title">Баасы</div>
+            <div class="price-ru">65 $</div>
+          </div>
+        </div>
+        <div class="fcard-usage-title">Колдонуу ыкмасы</div>
+        <div class="fcard-usage">1 сашени жылуу сууда эритиңиз. Күнүнө 1 жолу кабыл алыңыз.</div>
+        <div class="fcard-warning"><b>Көңүл буруңуз!</b> Тек «Жимон Групп» компаниясынын расмий дүкөнүндө сатылат. Жасалма товарлардан этияттаныңыз. Дары каражаты эмес.</div>
+        <div class="fcard-actions">
+          <span class="pcard-more" onclick="toggleDesc(this)">толук маалымат</span>
+          <button class="pcard-ask" data-key="product-24" onclick="openPengModalByKey(this)">Пэндан суроо →</button>
+        </div>
+      </div></div>
+      <div class="fcard">
+      <div class="fcard-img-wrap"><img src="/images/product-25.jpg" alt="«Баоцин» Таблетки с пептидом костного мозга" loading="lazy" onerror="this.parentElement.style.display='none'"></div>
+      <div class="fcard-body">
+        <div class="fcard-name">«Баоцин»</div>
+        <div class="fcard-subtitle">Сөөк чучугунун пептиди менен таблеткалар</div>
+        <div class="fcard-volume">81 г · ар бири 0,9 г 90 таблетка</div>
+        <div class="fcard-desc">Уй сөөк чучугунун пептидинин негизинде инновациялык таблеткалар. Сөөк ткандар жана муундарды колдойт, жүктөмдөн кийин тезирээк калыбына келүүгө жардам берет жана жогорку энергия деңгээлин колдойт. Ичинен ден соолукка күн сайынгы кам көрүүгө ыңгайлуу формат.</div>
+        <div class="fcard-cols">
+          <div>
+            <div class="fcard-ingr-title">Негизги ингредиенттер</div>
+            <ul class="fcard-ingr-list"><li>Уй сөөк чучугунун пептиди — сөөк жана муундарды колдоо</li><li>Өсүмдүк компоненттери — организмди кешенди колдоо</li><li>Жогорку биожеткиликтүүлүк — оңой сиңүү</li><li>Ыңгайлуу таблетка форматы — күн сайынгы кабыл алуугa</li></ul>
+          </div>
+          <div class="fcard-price-box">
+            <div class="fcard-price-title">Баасы</div>
+            <div class="price-ru">65 $</div>
+          </div>
+        </div>
+        <div class="fcard-usage-title">Колдонуу ыкмасы</div>
+        <div class="fcard-usage">Күнүнө 1–2 таблетка, жылуу суу менен ичип кабыл алыңыз.</div>
+        <div class="fcard-warning"><b>Көңүл буруңуз!</b> Тек «Жимон Групп» компаниясынын расмий дүкөнүндө сатылат. Жасалма товарлардан этияттаныңыз. Дары каражаты эмес.</div>
+        <div class="fcard-actions">
+          <a href="/tunyuanbaoqing.html" class="pcard-more">подробнее →</a>
+          <button class="pcard-ask" data-key="product-25" onclick="openPengModalByKey(this)">Пэндан суроо →</button>
+        </div>
+      </div></div>
+      <div class="fcard">
+      <div class="fcard-img-wrap"><img src="/images/product-26.jpg" alt="«Баоцин» Порошок с пептидом костного мозга" loading="lazy" onerror="this.parentElement.style.display='none'"></div>
+      <div class="fcard-body">
+        <div class="fcard-name">«Баоцин»</div>
+        <div class="fcard-subtitle">Сөөк чучугунун пептиди менен порошок</div>
+        <div class="fcard-volume">72 г · ар бири 0,9 г 80 саше</div>
+        <div class="fcard-desc">Адамга биологиялык жактан жакын уй сөөк чучугунун пептидинин негизинде инновациялык продукт. Сөөк ткандар жана муундарды бекемдейт, иммунитетти жогорулатат, жүктөмдөн кийин тезирээк калыбына келүүгө жардам берет. Ичинен ден соолукка күн сайынгы кам көрүү.</div>
+        <div class="fcard-cols">
+          <div>
+            <div class="fcard-ingr-title">Негизги ингредиенттер</div>
+            <ul class="fcard-ingr-list"><li>Уй сөөк чучугунун порошогу — сөөк жана муундарды колдоо</li><li>Өсүмдүк компоненттери — организмди кешенди колдоо</li><li>Ыңгайлуу саше форматы — күн сайынгы кабыл алуугa</li><li>Жогорку биожеткиликтүүлүк — оңой сиңүү</li></ul>
+          </div>
+          <div class="fcard-price-box">
+            <div class="fcard-price-title">Баасы</div>
+            <div class="price-ru">65 $</div>
+          </div>
+        </div>
+        <div class="fcard-usage-title">Колдонуу ыкмасы</div>
+        <div class="fcard-usage">1 сашени жылуу сууда эритиңиз. Күнүнө 1 жолу кабыл алыңыз.</div>
+        <div class="fcard-warning"><b>Көңүл буруңуз!</b> Тек «Жимон Групп» компаниясынын расмий дүкөнүндө сатылат. Жасалма товарлардан этияттаныңыз. Дары каражаты эмес.</div>
+        <div class="fcard-actions">
+          <span class="pcard-more" onclick="toggleDesc(this)">толук маалымат</span>
+          <button class="pcard-ask" data-key="product-26" onclick="openPengModalByKey(this)">Пэндан суроо →</button>
+        </div>
+      </div></div>
+      <div class="fcard">
+      <div class="fcard-img-wrap"><img src="/images/product-27.jpg" alt="«Иша ЯньМэй» Средство для интимного ухода" loading="lazy" onerror="this.parentElement.style.display='none'"></div>
+      <div class="fcard-body">
+        <div class="fcard-name">«Иша ЯньМэй»</div>
+        <div class="fcard-subtitle">Интимдик кароого арналган каражат</div>
+        <div class="fcard-volume">5 мл · ар бири 0,5 мл 10 флакон</div>
+        <div class="fcard-desc">Күн сайынгы интимдик кароо үчүн жумшак өсүмдүк каражаты. Микрофлоранын табигый теңдемин колдойт, жаңылык жана ыңгайлуулук сезимин сактайт, сезимтал терилерге жумшак кам көрөт. Шафран, лаванда жана шалфейдин табигый экстракттары — ишенимдүүлүк жана аялдардын ден соолугуна күн сайынгы кам көрүү үчүн.</div>
+        <div class="fcard-cols">
+          <div>
+            <div class="fcard-ingr-title">Негизги ингредиенттер</div>
+            <ul class="fcard-ingr-list"><li>Шафран гүлдөрүнүн экстракты — жаңылык жана тонус</li><li>Лаванда экстракты — тынчтандыруу жана ыңгайлуулук</li><li>Шалфей экстракты — теңдем жана коргоо</li><li>Башка өсүмдүк компоненттери — жумшак кароо</li><li>Күн сайынгы колдонууга ылайыктуу</li></ul>
+          </div>
+          <div class="fcard-price-box">
+            <div class="fcard-price-title">Баасы</div>
+            <div class="price-ru">65 $</div>
+          </div>
+        </div>
+        <div class="fcard-usage-title">Колдонуу ыкмасы</div>
+        <div class="fcard-usage">Таңгактагы көрсөтмөгө ылайык тек тышкы колдонуңуз. Ичке кабыл албаңыз. Тек тышкы колдонуу үчүн.</div>
+        <div class="fcard-warning"><b>Көңүл буруңуз!</b> Тек «Жимон Групп» компаниясынын расмий дүкөнүндө сатылат. Жасалма товарлардан этияттаныңыз. Тек тышкы колдонуу үчүн. Кош бойлуулукта жана эмчек эмизүү мезгилинде адистин кеңешинен кийин колдонуңуз. Дары каражаты эмес.</div>
+        <div class="fcard-actions">
+          <a href="/yishayanmei.html" class="pcard-more">подробнее →</a>
+          <button class="pcard-ask" data-key="product-27" onclick="openPengModalByKey(this)">Пэндан суроо →</button>
+        </div>
+      </div></div>
+      <div class="fcard">
+      <div class="fcard-img-wrap"><img src="/images/product-28.jpg" alt="«Yuanyun» Карандаш для глаз" loading="lazy" onerror="this.parentElement.style.display='none'"></div>
+      <div class="fcard-body">
+        <div class="fcard-name">«Yuanyun»</div>
+        <div class="fcard-subtitle">Көзгө арналган карандаш</div>
+        <div class="fcard-volume">10 мл</div>
+        <div class="fcard-desc">Көз айланасынын назик терисин күн сайын кароого арналган жумшак өсүмдүк каражаты. Кургактык жана чыңалуу сезимин алат, микроайлануну жакшыртат, кара тегерекчелер жана шишикти азайтууга жардам берет. Табигый экстракттар этияттык менен жана натыйжалуу иштейт — күн сайын жаңы, эс алган көз карашы үчүн.</div>
+        <div class="fcard-cols">
+          <div>
+            <div class="fcard-ingr-title">Негизги ингредиенттер</div>
+            <ul class="fcard-ingr-list"><li>Шафран экстракты — жаркыроо жана тонус</li><li>Ачуу женьшень экстракты — микроайлануну жакшыртуу</li><li>Жалбыз экстракты — сергитүү жана чыңалуудан бошотуу</li><li>Хризантема экстракты — тынчтандыруу жана калыбына келтирүү</li><li>Гормон жана консерванттарсыз</li></ul>
+          </div>
+          <div class="fcard-price-box">
+            <div class="fcard-price-title">Баасы</div>
+            <div class="price-ru">65 $</div>
+          </div>
+        </div>
+        <div class="fcard-usage-title">Колдонуу ыкмасы</div>
+        <div class="fcard-usage">Жумулган көз айланасына жеңил массаждык кыймылдар менен сүйкөңүз. Көзгө тийбөөсүн көзөмөлдөңүз. Күнүнө 3–10 жолу колдонуңуз. Курс — 3 ай.</div>
+        <div class="fcard-warning"><b>Көңүл буруңуз!</b> Тек «Жимон Групп» компаниясынын расмий дүкөнүндө сатылат. Жасалма товарлардан этияттаныңыз. Тек тышкы колдонуу үчүн. Көзгө тийбөөсүн көзөмөлдөңүз. Дары каражаты эмес.</div>
+        <div class="fcard-actions">
+          <a href="/yuanyun.html" class="pcard-more">подробнее →</a>
+          <button class="pcard-ask" data-key="product-28" onclick="openPengModalByKey(this)">Пэндан суроо →</button>
+        </div>
+      </div></div>
+      <div class="fcard">
+      <div class="fcard-img-wrap"><img src="/images/product-29.jpg" alt="«Мо юй фэнь» Порошок для ножных ванн" loading="lazy" onerror="this.parentElement.style.display='none'"></div>
+      <div class="fcard-body">
+        <div class="fcard-name">«Мо юй фэнь»</div>
+        <div class="fcard-subtitle">Бут ваннасы үчүн порошок</div>
+        <div class="fcard-volume">120 г · ар бири 8 г 15 саше</div>
+        <div class="fcard-desc">Жылытуучу бут ваннасы үчүн табигый нефрит порошогу. Денени жылытууга өбөлгө түзөт, буттагы суук жана калтырак сезимин азайтат, узак күндөн кийин терең эс алууга жардам берет. Жеңилдик жана ыңгайлуулук сезимин кайтарат — кечки калыбына келтирүүнүн сонун ырасымы.</div>
+        <div class="fcard-cols">
+          <div>
+            <div class="fcard-ingr-title">Негизги ингредиенттер</div>
+            <ul class="fcard-ingr-list"><li>Нефрит порошогу — жылытуу жана ыңгайлуулук</li><li>Табигый курам — жумшак таасир</li><li>Буттагы суук сезимин азайтуу</li><li>Узак күндөн кийин эс алуу</li><li>Ыңгайлуу саше форматы — оңой колдонуу</li></ul>
+          </div>
+          <div class="fcard-price-box">
+            <div class="fcard-price-title">Баасы</div>
+            <div class="price-ru">127 $</div>
+          </div>
+        </div>
+        <div class="fcard-usage-title">Колдонуу ыкмасы</div>
+        <div class="fcard-usage">1–2 сашени жылуу сууда эритиңиз. 15–20 мүнөт бут ваннасын кабыл алыңыз.</div>
+        <div class="fcard-warning"><b>Көңүл буруңуз!</b> Тек «Жимон Групп» компаниясынын расмий дүкөнүндө сатылат. Жасалма товарлардан этияттаныңыз. Тек тышкы колдонуу үчүн. Ичке кабыл алба. Дары каражаты эмес.</div>
+        <div class="fcard-actions">
+          <span class="pcard-more" onclick="toggleDesc(this)">толук маалымат</span>
+          <button class="pcard-ask" data-key="product-29" onclick="openPengModalByKey(this)">Пэндан суроо →</button>
+        </div>
+      </div></div>
+      <div class="fcard">
+      <div class="fcard-img-wrap"><img src="/images/product-30.jpg" alt="«Кэлешу» Массажный крем двойного действия" loading="lazy" onerror="this.parentElement.style.display='none'"></div>
+      <div class="fcard-body">
+        <div class="fcard-name">«Кэлешу»</div>
+        <div class="fcard-subtitle">Кош таасирдүү массаждык крем</div>
+        <div class="fcard-volume">ар бири 68 г 2 туба</div>
+        <div class="fcard-desc">Күчтүү өсүмдүк комплекси менен уникалдуу кош таасирдүү массаждык крем. Булчуңдар жана муундардагы ыңгайсыздык сезимин азайтат, жылытуучу жана сергитүүчү эффектти айкалыштырат, жүктөмдөн кийин терең эс алууга өбөлгө түзөт. Кыймылдуулукту жакшыртат жана денеге ыңгайлуулукту кайтарат — активдүү жашоо образы жана күн сайынгы калыбына келтирүү үчүн.</div>
+        <div class="fcard-cols">
+          <div>
+            <div class="fcard-ingr-title">Негизги ингредиенттер</div>
+            <ul class="fcard-ingr-list"><li>Рейши козунун экстракты — калыбына келтирүү</li><li>Калофиллум майы — азыктандыруу жана ыңгайлуулук</li><li>Куркума экстракты — антиоксиданттык колдоо</li><li>Лаванда, зенжебил жана женьшень майлары — эс алуу</li><li>Өсүмдүк комплекси — кош таасир</li></ul>
+          </div>
+          <div class="fcard-price-box">
+            <div class="fcard-price-title">Баасы</div>
+            <div class="price-ru">65 $</div>
+          </div>
+        </div>
+        <div class="fcard-usage-title">Колдонуу ыкмасы</div>
+        <div class="fcard-usage">Ыңгайсыздык аймагына аз өлчөмдө крем сүйкөңүз. Толук сиңгенче жумшак массаждык кыймылдар менен ушалаңыз.</div>
+        <div class="fcard-warning"><b>Көңүл буруңуз!</b> Тек «Жимон Групп» компаниясынын расмий дүкөнүндө сатылат. Жасалма товарлардан этияттаныңыз. Тек тышкы колдонуу үчүн. Бузулган теригe тийбөөсүн көзөмөлдөңүз. Дары каражаты эмес.</div>
+        <div class="fcard-actions">
+          <a href="/kelesu.html" class="pcard-more">подробнее →</a>
+          <button class="pcard-ask" data-key="product-30" onclick="openPengModalByKey(this)">Пэндан суроо →</button>
+        </div>
+      </div></div>
+      <div class="fcard">
+      <div class="fcard-img-wrap"><img src="/images/product-31.jpg" alt="«Фигура A» Программа клеточного очищения" loading="lazy" onerror="this.parentElement.style.display='none'"></div>
+      <div class="fcard-body">
+        <div class="fcard-name">«Фигура A»</div>
+        <div class="fcard-subtitle">Клетка тазалоо программасы</div>
+        <div class="fcard-volume">7–15–30 күндүк курс</div>
+        <div class="fcard-desc">Энергия жана тонуска негизги басым жасалган күчтүү «Фигура A» комплекси. Женьшень жана Хуанцзин энергия деңгээлин, эмгекке жөндөмдүүлүктү жана организмдин жалпы тонусун колдойт — чарчоону жеңүүгө жана күн бою активдүүлүктү сактоого жардам берет. Бирюканг (жумшак детокс), Жиротоп (тамактануну көзөмөлдөө), зыгыр боткосу жана коллаген пептиддери менен бирге комплекс байкаларлык натыйжа берет: көбүрөөк энергия, денедеги азыраак оордук жана күн сайынгы жыйылган сын-келбет. Диетасыз көлөмдү эле эмес, сергектикти, тонусту жана жеңилдикти каалагандар үчүн «ачкычтан» чечим.</div>
+        <div class="fcard-cols">
+          <div>
+            <div class="fcard-ingr-title">Негизги ингредиенттер</div>
+            <ul class="fcard-ingr-list"><li>Бирюканг — жумшак детокс жана ашказан-ичегини жеңилдетүү</li><li>Жиротоп — тамактануу жана салмакты көзөмөлдөө</li><li>Женьшень жана Хуанцзин — энергия жана тонус ★</li><li>Зыгыр коллаген боткосу — тери, тойгондук жана клетчатка</li><li>Коллаген пептиддери — муундар, сөөк жана серпилгичтик</li></ul>
+          </div>
+          <div class="fcard-price-box">
+            <div class="fcard-price-title">Баасы</div>
+            <div class="price-ru">302 $</div>
+          </div>
+        </div>
+        <div class="fcard-usage-title">Колдонуу ыкмасы</div>
+        <div class="fcard-usage">Эртең менен — Бирюканг + коллаген + Женьшень-Хуанцзин. Күндүз — Жиротоп + зыгыр боткосу. Кечинде — энергия жана тонусту калыбына келтирүү. Курс 7–15–30 күн.</div>
+        <div class="fcard-warning"><b>Көңүл буруңуз!</b> Тек «Жимон Групп» компаниясынын расмий дүкөнүндө сатылат. Жасалма товарлардан этияттаныңыз. Дары каражаты эмес. Салкын, кургак жерде сактаңыз.</div>
+        <div class="fcard-actions">
+          <span class="pcard-more" onclick="toggleDesc(this)">толук маалымат</span>
+          <button class="pcard-ask" data-key="product-31" onclick="openPengModalByKey(this)">Пэндан суроо →</button>
+        </div>
+      </div></div>
+      <div class="fcard">
+      <div class="fcard-img-wrap"><img src="/images/product-32.jpg" alt="«Фигура B» Программа клеточного очищения" loading="lazy" onerror="this.parentElement.style.display='none'"></div>
+      <div class="fcard-body">
+        <div class="fcard-name">«Фигура B»</div>
+        <div class="fcard-subtitle">Клетка тазалоо программасы</div>
+        <div class="fcard-volume">7–15–30 күндүк курс</div>
+        <div class="fcard-desc">Кан тазалоого негизги басым жасалган күчтүү «Фигура B» комплекси. Сюэланьдо жүрөк, кан тамырлар жана микроайлануу менен иштейт — шишикти азайтат, буттагы оордукту алат жана кан агымын «тазалоого» жардам берет. Бирюканг (жумшак детокс), Жиротоп (тамактануну көзөмөлдөө), зыгыр боткосу жана коллаген пептиддери менен бирге комплекс байкаларлык натыйжа берет: тартылган контур, дене жеңилдиги жана күн сайынгы ыңгайлуулук. Таза кан тамырларды, азыраак шишикти жана диетасыз жыйылган сын-келбетти каалагандар үчүн «ачкычтан» чечим.</div>
+        <div class="fcard-cols">
+          <div>
+            <div class="fcard-ingr-title">Негизги ингредиенттер</div>
+            <ul class="fcard-ingr-list"><li>Бирюканг — жумшак детокс жана ашказан-ичегини жеңилдетүү</li><li>Жиротоп — тамактануу жана салмакты көзөмөлдөө</li><li>Кан тазалоо (Сюэланьдо) — жүрөк, кан тамыр жана дренаж ★</li><li>Зыгыр коллаген боткосу — тери, тойгондук жана клетчатка</li><li>Коллаген пептиддери — муундар, сөөк жана серпилгичтик</li></ul>
+          </div>
+          <div class="fcard-price-box">
+            <div class="fcard-price-title">Баасы</div>
+            <div class="price-ru">302 $</div>
+          </div>
+        </div>
+        <div class="fcard-usage-title">Колдонуу ыкмасы</div>
+        <div class="fcard-usage">Эртең менен — Бирюканг + коллаген + Кан тазалоо. Күндүз — Жиротоп + зыгыр боткосу. Кечинде — кан тамырларды колдоо жана калыбына келтирүү. Курс 7–15–30 күн.</div>
+        <div class="fcard-warning"><b>Көңүл буруңуз!</b> Тек «Жимон Групп» компаниясынын расмий дүкөнүндө сатылат. Жасалма товарлардан этияттаныңыз. Дары каражаты эмес. Салкын, кургак жерде сактаңыз.</div>
+        <div class="fcard-actions">
+          <span class="pcard-more" onclick="toggleDesc(this)">толук маалымат</span>
+          <button class="pcard-ask" data-key="product-32" onclick="openPengModalByKey(this)">Пэндан суроо →</button>
+        </div>
       </div></div>
   </div>
 
-  <h2 class="section-h">Комплексные наборы</h2>
-  <p class="section-sub-h">Готовые программы из нескольких продуктов для комплексного решения</p>
-  <div class="product-grid" id="complexGrid">
-      <div class="pcard">
-      <div class="pcard-img-wrap"><img src="/images/complex-a.png" alt="«ФИГУРА A» · Диетический комплексный набор" loading="lazy" onerror="this.parentElement.style.display='none'"></div>
-      <div class="pcard-body">
-      <div class="pcard-brand">«ФИГУРА A» · Диетический комплексный набор</div>
-      <div class="pcard-short">Фигура · детокс</div>
-      <div class="pcard-hook">Даяр программа: жумшак тазалоо, зат алмашууну колдоо, тамактануунун көзөмөлү, женьшень жана дудник эсебинен муундарды тамактандыруу жана жалпы тонус.</div>
-      <div class="pcard-actions">
-      <a href="/complex-a.html" class="pcard-more">толук маалымат →</a>
-      <button class="pcard-ask" data-key="complex-a" onclick="openPengModalByKey(this)">Спросить Пэн →</button>
-      </div>
-      <div class="pcard-desc">Для тех, кто хочет уменьшить объёмы без жёстких диет, чувствует тяжесть и отёчность, много сидит и мало двигается.</div>
-      </div></div>
-      <div class="pcard">
-      <div class="pcard-img-wrap"><img src="/images/complex-b.png" alt="«ФИГУРА B» (версия Snow Lan Duo)" loading="lazy" onerror="this.parentElement.style.display='none'"></div>
-      <div class="pcard-body">
-      <div class="pcard-brand">«ФИГУРА B» (версия Snow Lan Duo)</div>
-      <div class="pcard-short">Фигура · салмак түшүрүү</div>
-      <div class="pcard-hook">Жеңил тазалоого, тамак сиңирүү менен иштөөгө жана күчтүүрөөк дренаж эффектине басым — ичи жана жамбаш аймагында шишик жана «жумшактыкка» ыктаган фигура үчүн.</div>
-      <div class="pcard-actions">
-     <a href="/complex-b.html" class="pcard-more">толук маалымат →</a>
-      <button class="pcard-ask" data-key="complex-b" onclick="openPengModalByKey(this)">Спросить Пэн →</button>
-      </div>
-      <div class="pcard-desc">Для тех, у кого вес «стоит», хотя питание уже улучшено, и есть застойность в теле.</div>
-      </div></div>
-      <div class="pcard">
-      <div class="pcard-img-wrap"><img src="/images/complex-c.png" alt="КОМПЛЕКС «C» «Молодость изнутри и снаружи»" loading="lazy" onerror="this.parentElement.style.display='none'"></div>
-      <div class="pcard-body">
-      <div class="pcard-brand">КОМПЛЕКС «C» «Молодость изнутри и снаружи»</div>
-      <div class="pcard-short">Жаштык · карылыкка каршы</div>
-      <div class="pcard-hook">Үч баскычтуу система: коллаген пептид порошогу теринин ичинен тамактандырат, дигидрокверцетин менен ичимдик коллагенди коргойт, карылыкка каршы мист натыйжаны сырттан бекитет.</div>
-      <div class="pcard-actions">
-      <span class="pcard-more" onclick="toggleDesc(this)">подробнее</span>
-      <button class="pcard-ask" data-key="complex-c" onclick="openPengModalByKey(this)">Спросить Пэн →</button>
-      </div>
-      <div class="pcard-desc">Для тех, кто замечает первые морщины, тусклость кожи и хочет замедлить старение без процедур и уколов.</div>
-      </div></div>
-      <div class="pcard">
-      <div class="pcard-img-wrap"><img src="/images/complex-d.png" alt="КОМПЛЕКС «D» «Суставы и подвижность»" loading="lazy" onerror="this.parentElement.style.display='none'"></div>
-      <div class="pcard-body">
-      <div class="pcard-brand">КОМПЛЕКС «D» «Суставы и подвижность»</div>
-      <div class="pcard-short">Муундар · кыймыл</div>
-      <div class="pcard-hook">Муундар үчүн порошок кемирчекти ичинен тамактандырат, сөөк коллаген ичимдиги сөөктү бекемдейт, ал эми массаж кремі сырттан тез женилдик берет.</div>
-      <div class="pcard-actions">
-      <span class="pcard-more" onclick="toggleDesc(this)">подробнее</span>
-      <button class="pcard-ask" data-key="complex-d" onclick="openPengModalByKey(this)">Спросить Пэн →</button>
-      </div>
-      <div class="pcard-desc">Для тех, у кого колени скрипят, спина ноет, и важна профилактика остеопороза.</div>
-      </div></div>
-      <div class="pcard">
-      <div class="pcard-img-wrap"><img src="/images/complex-e.png" alt="КОМПЛЕКС «E» «Сосуды и давление»" loading="lazy" onerror="this.parentElement.style.display='none'"></div>
-      <div class="pcard-body">
-      <div class="pcard-brand">КОМПЛЕКС «E» «Сосуды и давление»</div>
-      <div class="pcard-short">Тамырлар · жүрөк</div>
-      <div class="pcard-hook">Ангелика Кейске жана Натто таблеткалары тамырларды тазалайт, дигидрокверцетин менен ичимдик капиллярларды коргойт, бөйрөк комплекси суу-туз балансы аркылуу басымды жөнгө салат.</div>
-      <div class="pcard-actions">
-      <span class="pcard-more" onclick="toggleDesc(this)">подробнее</span>
-      <button class="pcard-ask" data-key="complex-e" onclick="openPengModalByKey(this)">Спросить Пэн →</button>
-      </div>
-      <div class="pcard-desc">Для тех, у кого давление скачет, отёки к вечеру и слабое кровообращение.</div>
-      </div></div>
-      <div class="pcard">
-      <div class="pcard-img-wrap"><img src="/images/complex-f.png" alt="КОМПЛЕКС «F» «Мужская сила и тонус»" loading="lazy" onerror="this.parentElement.style.display='none'"></div>
-      <div class="pcard-body">
-      <div class="pcard-brand">КОМПЛЕКС «F» «Мужская сила и тонус»</div>
-      <div class="pcard-short">Эркек күчү</div>
-      <div class="pcard-hook">Бөйрөк комплекси негизги энергияны калыбына келтирет, дигидрокверцетин менен ичимдик калыбына келтирүүнү тездетет, Ангелика Кейске таблеткалары ткандарга азык жеткирүүнү жакшыртат.</div>
-      <div class="pcard-actions">
-      <span class="pcard-more" onclick="toggleDesc(this)">подробнее</span>
-      <button class="pcard-ask" data-key="complex-f" onclick="openPengModalByKey(this)">Спросить Пэн →</button>
-      </div>
-      <div class="pcard-desc">Для тех, кто чувствует упадок сил и снижение мужского тонуса.</div>
-      </div></div>
-      <div class="pcard">
-      <div class="pcard-img-wrap"><img src="/images/complex-g.png" alt="КОМПЛЕКС «G» «Женское здоровье»" loading="lazy" onerror="this.parentElement.style.display='none'"></div>
-      <div class="pcard-body">
-      <div class="pcard-brand">КОМПЛЕКС «G» «Женское здоровье»</div>
-      <div class="pcard-short">Аялдар балансы</div>
-      <div class="pcard-hook">Интимдик бактериостатикалык комплекс микрофлораны калыбына келтирет, бөйрөк комплекси гормоналдык балансты нормалдаштырат жана ПМСти азайтат, мөмө-жашылча таблеткалары тамактануунун көзөмөлүн жүргүзөт.</div>
-      <div class="pcard-actions">
-      <span class="pcard-more" onclick="toggleDesc(this)">подробнее</span>
-      <button class="pcard-ask" data-key="complex-g" onclick="openPengModalByKey(this)">Спросить Пэн →</button>
-      </div>
-      <div class="pcard-desc">Для тех, у кого гормональный дисбаланс, ПМС и тяга к перекусам.</div>
-      </div></div>
-      <div class="pcard">
-      <div class="pcard-img-wrap"><img src="/images/complex-h.png" alt="КОМПЛЕКС «H» «Антиоксидант и детокс»" loading="lazy" onerror="this.parentElement.style.display='none'"></div>
-      <div class="pcard-body">
-      <div class="pcard-brand">КОМПЛЕКС «H» «Антиоксидант и детокс»</div>
-      <div class="pcard-short">Иммунитет · детокс</div>
-      <div class="pcard-hook">Дигидрокверцетин менен ичимдик эркин радикалдарды нейтралдаштырат, Лотос жана Долоно таблеткалары ичегини тазалайт, Ангелика Кейске таблеткалары канды жана тамырларды тазалайт.</div>
-      <div class="pcard-actions">
-      <span class="pcard-more" onclick="toggleDesc(this)">подробнее</span>
-      <button class="pcard-ask" data-key="complex-h" onclick="openPengModalByKey(this)">Спросить Пэн →</button>
-      </div>
-      <div class="pcard-desc">Для тех, у кого ощущение зашлакованности, тяжесть без причины, хронический стресс.</div>
-      </div></div>
-      <div class="pcard">
-      <div class="pcard-img-wrap"><img src="/images/complex-i.png" alt="КОМПЛЕКС «I» «Глаза и экранная усталость»" loading="lazy" onerror="this.parentElement.style.display='none'"></div>
-      <div class="pcard-body">
-      <div class="pcard-brand">КОМПЛЕКС «I» «Глаза и экранная усталость»</div>
-      <div class="pcard-short">Көрүү · көз</div>
-      <div class="pcard-hook">Көз стиги сырттан чарчоону алат, дигидрокверцетин менен ичимдик тор кабыкты ичинен коргойт, таблеткалар көздүн капиллярларындагы микроциркуляцияны жакшыртат.</div>
-      <div class="pcard-actions">
-      <span class="pcard-more" onclick="toggleDesc(this)">подробнее</span>
-      <button class="pcard-ask" data-key="complex-i" onclick="openPengModalByKey(this)">Спросить Пэн →</button>
-      </div>
-      <div class="pcard-desc">Для тех, чьи глаза краснеют и устают после работы за экраном.</div>
-      </div></div>
-      <div class="pcard">
-      <div class="pcard-img-wrap"><img src="/images/complex-j.png" alt="КОМПЛЕКС «J» «Лёгкий старт»" loading="lazy" onerror="this.parentElement.style.display='none'"></div>
-      <div class="pcard-body">
-      <div class="pcard-brand">КОМПЛЕКС «J» «Лёгкий старт»</div>
-      <div class="pcard-short">Энергия · тонус</div>
-      <div class="pcard-hook">Негизги программа: Лотос жана Долоно таблеткалары ичегини тазалайт жана азык заттардын сиңишине жол ачат, бөйрөк комплекси негизги энергияны жана тонусту калыбына келтирет.</div>
-      <div class="pcard-actions">
-      <span class="pcard-more" onclick="toggleDesc(this)">подробнее</span>
-      <button class="pcard-ask" data-key="complex-j" onclick="openPengModalByKey(this)">Спросить Пэн →</button>
-      </div>
-      <div class="pcard-desc">Для тех, кто хочет попробовать продукцию JIMON с чего-то простого и понятного.</div>
-      </div></div>
-  </div>
-
- <div class="cta-block">
+  <div class="cta-block">
   <h2 style="color:var(--gold-light); font-family:'Noto Serif SC',serif; font-size:1.3rem;">Тандоодо жардам керекпи?</h2>
-  <p style="color:rgba(250,246,236,0.7); margin-top:8px;">Товар карточкасынан Пэндан сураңыз же куратор менен байланышыңыз.</p>
+  <p style="color:rgba(250,246,236,0.7); margin-top:8px;">Товар карточкасынан Пэндан суроо бериңиз же куратор менен байланышыңыз.</p>
   <div style="display:flex; gap:10px; justify-content:center; flex-wrap:wrap;">
     <a href="/index.html?interest=client#lead" class="btn-primary" style="margin-top:14px;">Кардар болуу →</a>
     <a href="/index.html?interest=partner#lead" class="btn-primary" style="margin-top:14px; background:transparent; color:var(--gold-light); border:2px solid var(--gold);">Өнөктөш болуу →</a>
@@ -433,25 +977,25 @@
       <button class="peng-modal-close" onclick="closePengModal()">✕</button>
     </div>
     <div class="peng-modal-messages" id="pengModalMessages"></div>
-   <div class="peng-modal-cta" id="pengModalCta">
+    <div class="peng-modal-cta" id="pengModalCta">
   <div style="display:flex; gap:10px; justify-content:center; flex-wrap:wrap;">
-    <a href="/index.html?interest=client#lead" class="btn-primary" style="margin-top:0;">Стать клиентом →</a>
-    <a href="/index.html?interest=partner#lead" class="btn-primary" style="margin-top:0; background:transparent; color:var(--gold-light); border:2px solid var(--gold);">Стать партнёром →</a>
+    <a href="/index.html?interest=client#lead" class="btn-primary" style="margin-top:0;">Кардар болуу →</a>
+    <a href="/index.html?interest=partner#lead" class="btn-primary" style="margin-top:0; background:transparent; color:var(--gold-light); border:2px solid var(--gold);">Өнөктөш болуу →</a>
   </div>
 </div>
     <div class="peng-modal-input-row" id="pengModalInputRow">
-      <input type="text" id="pengModalInput" placeholder="Спросите про этот товар..." onkeypress="if(event.key==='Enter') sendCatalogPeng()">
+      <input type="text" id="pengModalInput" placeholder="Бул товар жөнүндө сураңыз..." onkeypress="if(event.key==='Enter') sendCatalogPeng()">
       <button onclick="sendCatalogPeng()">→</button>
     </div>
-    <div class="peng-modal-limit" id="pengModalLimit">Бесплатных вопросов сегодня: 10</div>
+    <div class="peng-modal-limit" id="pengModalLimit">Бүгүнкү акысыз суроолор: 10</div>
   </div>
 </div>
 
 <script>
 // ===== БАЗА ДАННЫХ ПРОДУКЦИИ (используется только для контекста чата с Пэн —
 //       видимые карточки выше теперь статический HTML для индексации поисковиками) =====
-const PRODUCTS = {"product-1": {"brand": "BIRUNKANG (碧润康) · Жевательные таблетки «Лотос и Боярышник»", "short": "Пищеварение · детокс", "desc": "Дәстүрлүү кытай чөптөрүнүн негизиндеги табигый чайнама таблеткалар — лотос жалбырагы, долоно, пория жана кассия үрөнү. Күнүнө 2–3 таблетка тамак сиңирүүнү, дененин жеңилдигин жана сергектикти колдойт. 30 таблетка — 10–15 күндүк курс.\n\nТяжесть после еды, вздутие, жирный блеск на коже, налёт на языке, постоянная усталость — всё это признаки того, что организму нужна мягкая поддержка."}, "product-2": {"brand": "СЮЭ ЛАН ДО (雪蓝朵) · «Ангелика Кейске и Натто»", "short": "Сердце · сосуды", "desc": "Ангелика Кейске (Аситаба) жана Натто негизиндеги эрип кетүүчү таблеткалар, лумброкиназа, жүгөрү мурутчалары жана өсүмдүк экстрактылары менен толукталган. 60 таблетка.\n\nСердце работает без остановки 24 часа в сутки. Стресс, малоподвижный образ жизни и возраст постепенно влияют на кровообращение и тонус сосудов."}, "product-3": {"brand": "СЯНЬ ЮНЬ Ю (纤韵悠) · Фруктово-овощные таблетки", "short": "Антивисцерал · Вывод", "desc": "10дон ашык табигый экстракттын негизиндеги мөмө-жашылча чайнама таблеткалары: кулпунай, кара карагат, жашыл кофе, ак буурчак, женьшень, кудзу. Пачкада 30 таблетка.\n\nМедленный обмен веществ — не приговор, а сигнал организма: ему не хватает нужных нутриентов, пищевых волокон и поддержки кишечника."}, "product-4": {"brand": "MAYOU (马优) · Почечный комплекс «Женьшень и Хуанцзин»", "short": "Почки · мужское", "desc": "Женьшень, хуанцзин, годжи жемиштери жана эвкоммиянын эркек гүлдөрү бар премиум фитокомплекс. −196°C инстанттык тоңдуруу технологиясы. 20 таблетка.\n\nВ восточной медицине почки — источник жизненной энергии Ци, основа выносливости, иммунитета и репродуктивной функции."}, "product-5": {"brand": "ШАНЬ ЛИ НЭН (膳力能) · Льняной коллагеновый пептидный порошок", "short": "Питание · Молодость", "desc": "Зыгыр үрөнү жана сөөк коллаген пептиди негизиндеги көп функциялуу синергетикалык порошок ичимдик. Ак буурчак углеводдордун сиңишин токтотот. Стик 30 г × 10 порция.\n\nСовременный ритм жизни — это еда на бегу. Этот напиток создан для тех, кто хочет питаться осознанно."}, "product-6": {"brand": "SHANLINENG (膳力能) · Комплекс для суставов и костей", "short": "Суставной · Коллаген", "desc": "Комплекстүү тамактандыруучу порошок: II түрдөгү коллаген, хондроитин, глюкозамин, гиалурон кислотасы жана минералдар. Саше 6г × 20 пакет.\n\nСуставы и кости держат нас всю жизнь, но изнашиваются первыми. Комплекс даёт им именно то, из чего они состоят."}, "product-7": {"brand": "SHANLINENG (膳力能) · Костный коллагеновый пептидный напиток", "short": "Пептидный · Коллаген", "desc": "Сөөк коллагени бар функционалдык порошок ичимдик. 10г стик — ысык сууда эритилет. Пачкада 20 порция.\n\nС годами суставы начинают «скрипеть» — это нехватка коллагена, из которого на 30% состоят наши кости, хрящи и связки."}, "product-8": {"brand": "YISHAYANMEI (伊莎妍美) · Интимный бактериостатический комплекс", "short": "Женское здоровье", "desc": "Воробейник, хризантема жана клюква менен жергиликтүү бактериостатикалык кароо үчүн инновациялык фитокапсулалар. Аялдар жана эркектер үчүн. 5,5 мл 10 капсула.\n\nДеликатная зона — первая линия защиты организма, одна из самых чувствительных к стрессу."}, "product-9": {"brand": "TIANRANCUI (添然萃) · Напиток с дигидрокверцетином", "short": "Бронхи · Горло", "desc": "Дигидрокверцетин, бал, мөмө концентраттары жана чөптөр негизиндеги өсүмдүк ичимдиги. Саше 25 мл, пачкада 20 даана.\n\nСухой воздух, пыль, курение, городской смог раздражают горло — этот напиток создан для точечной защиты."}, "product-10": {"brand": "КЭЛЭШУ (科集桂) · Травяной массажный крем двойного действия", "short": "Суставы · массаж", "desc": "Сегиз түрдөгү таза эфир майлары жана кытай чөптөрүнүн экстракттары негизиндеги чөптүү массаж кремі. 100 г, тышкы колдонуу.\n\nОблегчение мышечной и суставной боли после долгого сидения, стояния или физических нагрузок."}, "product-11": {"brand": "AZEYIHUANG (阿泽益黄) · «Король иммунитета» Цикорий", "short": "Иммунитет · цикорий", "desc": "Цикорий негизиндеги чайнама таблеткалар. Цикорий тамырында 70%ке чейин инулин бар. 0,3 г 50 таблетка.\n\nСовременная наука называет кишечник «вторым мозгом» — 70–80% иммунных клеток организма находятся именно там."}, "product-12": {"brand": "Тун Юань Бао Цин (同源葆青) · «Создатель стволовых клеток»", "short": "Омоложение клеток", "desc": "Уй сөөк чучугунун пептиди негизиндеги инновациялык комплекс. 0,9 г 90 таблетка — клеткаларды колдоонун үч айлык курсу.\n\nКостный мозг — «фабрика жизни» внутри тела, именно здесь рождаются стволовые клетки."}, "product-13": {"brand": "ЮАНЬЮНЬ (媛韵牌) · Антибактериальный глазной стик «Кушень»", "short": "Глаза · усталость", "desc": "Софора тамыры жана ментол негизиндеги өсүмдүк бактериостатикалык эритмеси бар компакттуу алтын стик. 10 мл.\n\nГлаза первыми устают в мире экранов — стик возвращает комфорт без капель и без спешки в аптеку."}, "product-14": {"brand": "SULRANCHO (雪兰草) · Антивозрастной мист «Снежная Орхидея»", "short": "Антивозрастной мист", "desc": "Кар орхидеясынын экстракты, 4 пептид жана фуллерен менен беттик көп функциялуу спрей-кароо. 120 мл.\n\nРазглаживает морщинки, возвращает ровный тон, сужает поры, насыщает влагой — за секунды, дома или в дороге."}};
-const COMPLEXES = {"complex-a": {"brand": "«ФИГУРА A» · Диетический комплексный набор", "short": "Фигура · детокс", "desc": "Даяр программа: жумшак тазалоо, зат алмашууну колдоо, тамактануунун көзөмөлү, женьшень жана дудник эсебинен муундарды тамактандыруу жана жалпы тонус.\n\nДля тех, кто хочет уменьшить объёмы без жёстких диет, чувствует тяжесть и отёчность, много сидит и мало двигается."}, "complex-b": {"brand": "«ФИГУРА B» (версия Snow Lan Duo)", "short": "Фигура · снижение веса", "desc": "Жеңил тазалоого, тамак сиңирүү менен иштөөгө жана күчтүүрөөк дренаж эффектине басым — ичи жана жамбаш аймагында шишик жана «жумшактыкка» ыктаган фигура үчүн.\n\nДля тех, у кого вес «стоит», хотя питание уже улучшено, и есть застойность в теле."}, "complex-c": {"brand": "КОМПЛЕКС «C» «Молодость изнутри и снаружи»", "short": "Молодость · антивозраст", "desc": "Үч баскычтуу система: коллаген пептид порошогу теринин ичинен тамактандырат, дигидрокверцетин менен ичимдик коллагенди коргойт, карылыкка каршы мист натыйжаны сырттан бекитет.\n\nДля тех, кто замечает первые морщины, тусклость кожи и хочет замедлить старение без процедур и уколов."}, "complex-d": {"brand": "КОМПЛЕКС «D» «Суставы и подвижность»", "short": "Суставы · движение", "desc": "Муундар үчүн порошок кемирчекти ичинен тамактандырат, сөөк коллаген ичимдиги сөөктү бекемдейт, ал эми массаж кремі сырттан тез женилдик берет.\n\nДля тех, у кого колени скрипят, спина ноет, и важна профилактика остеопороза."}, "complex-e": {"brand": "КОМПЛЕКС «E» «Сосуды и давление»", "short": "Сосуды · сердце", "desc": "Ангелика Кейске жана Натто таблеткалары тамырларды тазалайт, дигидрокверцетин менен ичимдик капиллярларды коргойт, бөйрөк комплекси суу-туз балансы аркылуу басымды жөнгө салат.\n\nДля тех, у кого давление скачет, отёки к вечеру и слабое кровообращение."}, "complex-f": {"brand": "КОМПЛЕКС «F» «Мужская сила и тонус»", "short": "Мужская сила", "desc": "Бөйрөк комплекси негизги энергияны калыбына келтирет, дигидрокверцетин менен ичимдик калыбына келтирүүнү тездетет, Ангелика Кейске таблеткалары ткандарга азык жеткирүүнү жакшыртат.\n\nДля тех, кто чувствует упадок сил и снижение мужского тонуса."}, "complex-g": {"brand": "КОМПЛЕКС «G» «Женское здоровье»", "short": "Женский баланс", "desc": "Интимдик бактериостатикалык комплекс микрофлораны калыбына келтирет, бөйрөк комплекси гормоналдык балансты нормалдаштырат жана ПМСти азайтат, мөмө-жашылча таблеткалары тамактануунун көзөмөлүн жүргүзөт.\n\nДля тех, у кого гормональный дисбаланс, ПМС и тяга к перекусам."}, "complex-h": {"brand": "КОМПЛЕКС «H» «Антиоксидант и детокс»", "short": "Иммунитет · детокс", "desc": "Дигидрокверцетин менен ичимдик эркин радикалдарды нейтралдаштырат, Лотос жана Долоно таблеткалары ичегини тазалайт, Ангелика Кейске таблеткалары канды жана тамырларды тазалайт.\n\nДля тех, у кого ощущение зашлакованности, тяжесть без причины, хронический стресс."}, "complex-i": {"brand": "КОМПЛЕКС «I» «Глаза и экранная усталость»", "short": "Зрение · глаза", "desc": "Көз стиги сырттан чарчоону алат, дигидрокверцетин менен ичимдик тор кабыкты ичинен коргойт, таблеткалар көздүн капиллярларындагы микроциркуляцияны жакшыртат.\n\nДля тех, чьи глаза краснеют и устают после работы за экраном."}, "complex-j": {"brand": "КОМПЛЕКС «J» «Лёгкий старт»", "short": "Энергия · тонус", "desc": "Негизги программа: Лотос жана Долоно таблеткалары ичегини тазалайт жана азык заттардын сиңишине жол ачат, бөйрөк комплекси негизги энергияны жана тонусту калыбына келтирет.\n\nДля тех, кто хочет попробовать продукцию JIMON с чего-то простого и понятного."}};
+const PRODUCTS = {"product-1": {"brand": "«Aura Curu» · Жаркыроо жана серпилгичтикке арналган массаждык маска", "short": "Жаркыроо жана серпилгичтикке арналган массаждык маска", "desc": "Теринин жаркыроосу жана серпилгичтиги үчүн сонун массаждык маска. Терең нымдандырат, ийкемдүүлүктү жогорулатат, табигый жаркыроо тартуулайт жана териni калыбына келтирет. Табигый эфир майлары жана экстракттар синергияда иштейт — таза, кароого алынган жана жаш көрүнүш үчүн күн сайын."}, "product-2": {"brand": "«Aura Curu» · Жуунуу үчүн тазалоочу бал-гель", "short": "Жуунуу үчүн тазалоочу бал-гель", "desc": "Күн сайынгы жуунуу үчүн жумшак тазалоочу бал-гель. Ластанууну, себумду жана макияждын калдыктарын теринин коргоочу катмарын бузбай жумшак кетирет. Нымдуулукту сактайт, тартылуу сезимин пайда кылбайт жана сезимтал терилерге да сонун туура келет. Таза, кароого алынган бет үчүн эртең менен жана кечинде."}, "product-3": {"brand": "«Aura Curu» · Жашартуучу лифтинг-спрей", "short": "Жашартуучу лифтинг-спрей", "desc": "Бетке арналган ыкчам жашартуучу лифтинг-спрей. Терең нымдандырат, серпилгичтик жана ийкемдүүлүктү жогорулатат, майда бырыштарды тегиздөөгө жардам берет жана теринин коргоочу катмарын колдойт. Күчтүү пептиддер жана гиалурон кислотасы бар жеңил текстура — күн бою жаңы, тартылган жана жаркыраган бет үчүн."}, "product-4": {"brand": "«Aura Curu» · Жашартуучу калыптоочу май-эликсир", "short": "Жашартуучу калыптоочу май-эликсир", "desc": "Териni жашартууга арналган сонун калыптоочу май-эликсир. Серпилгичтик жана ийкемдүүлүктү жогорулатат, интенсивдүү нымдандырат жана азыктандырат, түстү теңдештирет жана текстураны жакшыртат. Теринин коргоочу катмарын бекемдейт. Күчтүү пептиддер, рекомбинанттык эластин жана өсүмдүк экстракттары — байкалаарлык тартылган, жаркыраган жана кароого алынган тери үчүн."}, "product-5": {"brand": "«Aura Curu» · Көз айланасынын терисине арналган сарысуу", "short": "Көз айланасынын терисине арналган сарысуу", "desc": "Көз айланасынын назик терисине арналган интенсивдүү сарысуу. Майда бырыштарды жана «каз буттарын» жумшартат, шишикти азайтат, түстү ачыктайт жана жаркыроо берет. Тынчтандырат жана теринин чекитин бекемдейт. Муздатуучу эффекти бар керамикалык апликатор — күн сайын жаңы, эс алган көз карашы үчүн."}, "product-6": {"brand": "«CUY RANCHO» · Теринин кешенди кароосуна арналган карылыкка каршы сериясы", "short": "Теринин кешенди кароосуна арналган карылыкка каршы сериясы", "desc": "Премиум класстагы гидролизделген кызыл күрүч экстрактынын негизинде толук карылыкка каршы кароо системасы. Жаркырообу калыбына келтирет, серпилгичтикти жогорулатат, теринi терең азыктандырат жана коргойт. Кытай өсүмдүк философиясы + заманбап активдүү компоненттер — гармониялуу, жаш жана кароого алынган тери үчүн күн сайын."}, "product-7": {"brand": "«Кар Орхидеясы» · Коллаген менен бетке арналган лифтинг-крем", "short": "Коллаген менен бетке арналган лифтинг-крем", "desc": "Теринi байкаларлык жашартуу үчүн коллаген менен интенсивдүү лифтинг-крем. Серпилгичтик жана ийкемдүүлүктү жакшыртат, майда бырыштарды визуалдуу тегиздейт, терең азыктандырат жана нымдандырат. Кургактыкты жана түстүн өчкөндүгүн жоёт. Герметикалык вакуумдук таңгак формуланын жаңылыгын жана натыйжалуулугун сактайт."}, "product-8": {"brand": "«Кар Орхидеясы» · Бетти кароо жана тартууга арналган спрей-мист", "short": "Бетти кароо жана тартууга арналган спрей-мист", "desc": "Териni ыкчам нымдандыруу жана тартуу үчүн жеңил спрей-мист. Кургактыкты жоёт, серпилгичтикти калыбына келтирет, карылыкка каршы эффект жана жаңылыкты тартуулайт. Гиалурон кислотасы, ниацинамид жана пептиддер синергияда иштейт — күн бою кароого алынган, жаркыраган бет үчүн. Ар кандай тери түрүнө туура келет."}, "product-9": {"brand": "«St. Qanon» · SPF 50+ PA++++ күндөн коргоочу крем", "short": "SPF 50+ PA++++ күндөн коргоочу крем", "desc": "Жогорку SPF 50+ PA++++ фактору менен күндөн ишенимдүү коргоо. UVA жана UVB нурларын натыйжалуу тосот, теринин нымдуулугун колдойт жана кургактыкты алдын алат. Жеңил текстура ыңгайлуу тарайт жана макияждын алдында база катары колдонулушу мүмкүн. Теринин күн сайынгы коргонуусу жана дени сак жаркыроосу үчүн."}, "product-10": {"brand": "«Бирунканг (Детокс)» · Лотос жалбырагы жана долоно менен пресстелген кэмпиттер", "short": "Лотос жалбырагы жана долоно менен пресстелген кэмпиттер", "desc": "Лотос жалбырагы жана долоно негизиндеги табигый продукт. Тамак сиңирүүнү натыйжалуу жакшыртат, салмакты көзөмөлдөөгө жардам берет, организмди жумшак тазалайт жана дени сак зат алмашууну колдойт. Күн сайынгы жеңилдик жана ден соолукка кам көрүү үчүн бай өсүмдүк курамы."}, "product-11": {"brand": "«Сянь Юнь Ю (Жиротоп)» · Мөмө-жашылча порошогу менен пресстелген кэмпиттер", "short": "Мөмө-жашылча порошогу менен пресстелген кэмпиттер", "desc": "Мөмө-жашылча порошоктору, женьшень жана суперфудалар негизиндеги табигый продукт. Салмакты көзөмөлдөөгө жардам берет, май жана углевод алмашуусун жөнгө салат, ашыкча тамактанууга болгон умтулууну азайтат жана тойгондук сезимин узартат. Күн сайын жеңилдик жана энергия тартуулайт. Ашыкча кантсыз бай өсүмдүк курамы — сымбат, тонус жана өзүнө күн сайынгы кам көрүү үчүн."}, "product-12": {"brand": "«Сюэланьдо (Кровочистка)» · Ашитаба жана натто менен пресстелген кэмпиттер", "short": "Ашитаба жана натто менен пресстелген кэмпиттер", "desc": "Ашитаба жана натто негизиндеги табигый продукт. Кан басымын турукташтырат жана кандагы кантты нормалдаштырат. Дени сак кан айланууну колдойт, кан тамырларды тазалайт, зат алмашууну нормалдаштырууга жардам берет жана организмдин жалпы тонусун жогорулатат. Ден соолукка күн сайынгы кам көрүү үчүн бай өсүмдүк курамы."}, "product-13": {"brand": "«Льняная коллагеновая каша (Шаньлинэн)» · 2 куту", "short": "2 куту", "desc": "Зыгыр үрөнү жана коллаген пептиддери негизиндеги табигый продукт. Теринин серпилгичтиги менен ийкемдүүлүгүн колдойт, чач жана тырмактарды бекемдейт, тамак сиңирүү жана ичегинин иштешин колдойт, зат алмашууну нормалдаштырууга өбөлгө түзөт, тойгондук сезимин колдоого жардам берет. Сулуулук, жеңилдик жана ден соолукка күн сайынгы кам көрүү үчүн өсүмдүк белогунун жана клетчатканын булагы."}, "product-14": {"brand": "«Коллагеновые пептиды (Шаньлинэн)»", "short": "200 г · ар бири 10 г 20 саше", "desc": "Жогорку сапаттагы коллаген пептиддери негизиндеги табигый продукт. Теринин серпилгичтиги менен ийкемдүүлүгүн колдойт, териni ичинен нымдандырууга өбөлгө түзөт, чач жана тырмактардын ден соолугун колдойт. Оңой сиңет, жагымдуу даам — сулуулук жана жаштыкка күн сайынгы кам көрүү үчүн."}, "product-15": {"brand": "«Азыктык негиз» муундар жана сөөктөргө", "short": "120 г · ар бири 6 г 20 саше", "desc": "Муундар жана сөөктөрдүн ден соолугу үчүн табигый азыктык негиз. Муундардын кыймылдуулугун жана ыңгайлуулугун колдойт, сөөк ткандын бекемделишине өбөлгө түзөт, катуулук сезимин азайтууга жардам берет жана байламта ткан менен кемирчекти колдойт. Кыймылдын күн сайынгы жеңилдиги жана таяныч-кыймыл аппаратына кам көрүү үчүн."}, "product-16": {"brand": "«Женьшень жана хуанцзин менен кэмпиттер»", "short": "12 г · ар бири 0,6 г 20 таблетка", "desc": "Женьшень жана хуанцзин экстрактысынын негизинде ыңгайлуу пресстелген кэмпиттер. Энергия деңгээлин жана эмгекке жөндөмдүүлүктү колдойт, чарчоо сезимин азайтууга жардам берет жана иммунитетти бекемдөөгө өбөлгө түзөт. Жагымдуу формат — күн сайынгы сергектик жана тонус үчүн жөн гана күнүнө 1–2 таблетка соруңуз."}, "product-17": {"brand": "«Карагай уругунун майы менен гель кэмпиттер (Мээ)»", "short": "30 г · ар бири 0,5 г 60 кэмпит", "desc": "Мээ жана нерв системасына күчтүү колдоо. Ой жүгүртүүнүн тактыгы, көңүл буруу жана нейрондорду коргоо үчүн негизги компонент — карагай уруктарынын майынан алынган нервон кислотасына бай. Акыл-эстин курчтугун сактоого жардам берет, акыл эмгегинин чарчоосун азайтат жана нерв системасынын иштешин күн сайын колдойт. Таза акыл-эс жана өндүрүмдүүлүктү баалагандар үчүн кантсыз ыңгайлуу формат."}, "product-18": {"brand": "«Куркумалуу суусундук» боорду колдоого", "short": "500 мл · ар бири 25 мл 20 саше", "desc": "Боордун белок пептиди жана куркума тамырынын экстрактысынын негизинде табигый суусундук. Боордун иштешин колдойт, организмдин табигый тазалануусуна өбөлгө түзөт, тамактангандан кийинки оордук сезимин азайтууга жардам берет жана зат алмашууну колдойт. Боорго жана жеңилдикке күн сайынгы кам көрүү үчүн."}, "product-19": {"brand": "«Өсүмдүк суусундугу» тамакты коргоого", "short": "500 мл · ар бири 25 мл 20 саше", "desc": "Тамактын жана үн байламтасынын ыңгайлуулугу үчүн табигый өсүмдүк суусундугу. Кургактык жана кычышуу сезимин жумшартат, үн жүктөмү жогору болгондо ыңгайлуулукту колдойт, сергитет жана жеңилдик сезимин калтырат. Үн жана тамакка күн сайынгы кам көрүүгө сонун."}, "product-20": {"brand": "«Азыктык суусундук» терини сулуулантууга", "short": "300 мл · ар бири 30 мл 10 саше", "desc": "Териni ичинен сулуулантуу үчүн табигый азыктык суусундук. Серпилгичтикти жана нымдуулукту колдойт, түстүн теңдигине жана табигый жаркырообуна өбөлгө түзөт, кургактык сезимин азайтууга жардам берет. Өсүмдүк компоненттери териni жаңылоо үчүн иштейт — күн сайын жаңы, дени сак жана жаркыраган көрүнүш үчүн."}, "product-21": {"brand": "«Luoxango» · Өсүмдүк суусундугу (Монах жемиши)", "short": "Өсүмдүк суусундугу (Монах жемиши)", "desc": "Монах жемишинин (архат) экстрактысынын негизинде табигый өсүмдүк суусундугу. Ашказан жана тамак сиңирүү иштешин жумшак колдойт, тамактангандан кийинки оордук сезимин алат, тамакты нымдандырат жана кургактыгын жумшартат. Сергитет, жеңилдик жана ыңгайлуулукту тартуулайт. Суюлтуунун кереги жок ичүүгө даяр суусундук — тамак сиңирүү жана тамакка күн сайынгы кам көрүүнүн сонун ырасымы."}, "product-22": {"brand": "«Дендробиумдуу суусундук» жана женьшень", "short": "60 г · ар бири 2 г 30 саше", "desc": "Дендробиум жана женьшень өсүндүлөрүнүн негизинде табигый суусундук. Энергия деңгээлин жана жашоо тонусун колдойт, организмди ичинен нымдандырууга өбөлгө түзөт, чарчоо сезимин азайтууга жардам берет жана иммунитетти колдойт. Күн сайынгы сергектик жана күчтү калыбына келтирүү үчүн."}, "product-23": {"brand": "«Фанцин» · Цикорий менен пресстелген кэмпиттер", "short": "Цикорий менен пресстелген кэмпиттер", "desc": "Цикорий тамырынын экстрактысынын негизинде ыңгайлуу пресстелген кэмпиттер. Организмдин табигый коргонуу күчтөрүн колдойт, зат алмашууну нормалдаштырууга өбөлгө түзөт жана энергия деңгээлин колдоого жардам берет. Жагымдуу формат — ден соолукка күн сайынгы кам көрүү үчүн жөн гана күнүнө 1–2 таблетка соруңуз."}, "product-24": {"brand": "«Цикорий порошогу» · Иммунитет үчүн", "short": "Иммунитет үчүн", "desc": "Цикорий тамырынын экстрактысы жана инулин негизиндеги табигый порошок. Организмдин табигый коргонуу күчтөрүн колдойт, ичегинин дени сак микрофлорасына өбөлгө түзөт, энергия деңгээлин колдоого жардам берет. Ичинен ден соолукка күн сайынгы кам көрүү үчүн өсүмдүк клетчаткасынын бай булагы."}, "product-25": {"brand": "«Баоцин» · Сөөк чучугунун пептиди менен таблеткалар", "short": "Сөөк чучугунун пептиди менен таблеткалар", "desc": "Уй сөөк чучугунун пептидинин негизинде инновациялык таблеткалар. Сөөк ткандар жана муундарды колдойт, жүктөмдөн кийин тезирээк калыбына келүүгө жардам берет жана жогорку энергия деңгээлин колдойт. Ичинен ден соолукка күн сайынгы кам көрүүгө ыңгайлуу формат."}, "product-26": {"brand": "«Баоцин» · Сөөк чучугунун пептиди менен порошок", "short": "Сөөк чучугунун пептиди менен порошок", "desc": "Адамга биологиялык жактан жакын уй сөөк чучугунун пептидинин негизинде инновациялык продукт. Сөөк ткандар жана муундарды бекемдейт, иммунитетти жогорулатат, жүктөмдөн кийин тезирээк калыбына келүүгө жардам берет. Ичинен ден соолукка күн сайынгы кам көрүү."}, "product-27": {"brand": "«Иша ЯньМэй» · Интимдик кароого арналган каражат", "short": "Интимдик кароого арналган каражат", "desc": "Күн сайынгы интимдик кароо үчүн жумшак өсүмдүк каражаты. Микрофлоранын табигый теңдемин колдойт, жаңылык жана ыңгайлуулук сезимин сактайт, сезимтал терилерге жумшак кам көрөт. Шафран, лаванда жана шалфейдин табигый экстракттары — ишенимдүүлүк жана аялдардын ден соолугуна күн сайынгы кам көрүү үчүн."}, "product-28": {"brand": "«Yuanyun» · Көзгө арналган карандаш", "short": "Көзгө арналган карандаш", "desc": "Көз айланасынын назик терисин күн сайын кароого арналган жумшак өсүмдүк каражаты. Кургактык жана чыңалуу сезимин алат, микроайлануну жакшыртат, кара тегерекчелер жана шишикти азайтууга жардам берет. Табигый экстракттар этияттык менен жана натыйжалуу иштейт — күн сайын жаңы, эс алган көз карашы үчүн."}, "product-29": {"brand": "«Мо юй фэнь» · Бут ваннасы үчүн порошок", "short": "Бут ваннасы үчүн порошок", "desc": "Жылытуучу бут ваннасы үчүн табигый нефрит порошогу. Денени жылытууга өбөлгө түзөт, буттагы суук жана калтырак сезимин азайтат, узак күндөн кийин терең эс алууга жардам берет. Жеңилдик жана ыңгайлуулук сезимин кайтарат — кечки калыбына келтирүүнүн сонун ырасымы."}, "product-30": {"brand": "«Кэлешу» · Кош таасирдүү массаждык крем", "short": "Кош таасирдүү массаждык крем", "desc": "Күчтүү өсүмдүк комплекси менен уникалдуу кош таасирдүү массаждык крем. Булчуңдар жана муундардагы ыңгайсыздык сезимин азайтат, жылытуучу жана сергитүүчү эффектти айкалыштырат, жүктөмдөн кийин терең эс алууга өбөлгө түзөт. Кыймылдуулукту жакшыртат жана денеге ыңгайлуулукту кайтарат — активдүү жашоо образы жана күн сайынгы калыбына келтирүү үчүн."}, "product-31": {"brand": "«Фигура A» · Клетка тазалоо программасы", "short": "Клетка тазалоо программасы", "desc": "Энергия жана тонуска негизги басым жасалган күчтүү «Фигура A» комплекси. Женьшень жана Хуанцзин энергия деңгээлин, эмгекке жөндөмдүүлүктү жана организмдин жалпы тонусун колдойт — чарчоону жеңүүгө жана күн бою активдүүлүктү сактоого жардам берет. Бирюканг (жумшак детокс), Жиротоп (тамактануну көзөмөлдөө), зыгыр боткосу жана коллаген пептиддери менен бирге комплекс байкаларлык натыйжа берет: көбүрөөк энергия, денедеги азыраак оордук жана күн сайынгы жыйылган сын-келбет. Диетасыз көлөмдү эле эмес, сергектикти, тонусту жана жеңилдикти каалагандар үчүн «ачкычтан» чечим."}, "product-32": {"brand": "«Фигура B» · Клетка тазалоо программасы", "short": "Клетка тазалоо программасы", "desc": "Кан тазалоого негизги басым жасалган күчтүү «Фигура B» комплекси. Сюэланьдо жүрөк, кан тамырлар жана микроайлануу менен иштейт — шишикти азайтат, буттагы оордукту алат жана кан агымын «тазалоого» жардам берет. Бирюканг (жумшак детокс), Жиротоп (тамактануну көзөмөлдөө), зыгыр боткосу жана коллаген пептиддери менен бирге комплекс байкаларлык натыйжа берет: тартылган контур, дене жеңилдиги жана күн сайынгы ыңгайлуулук. Таза кан тамырларды, азыраак шишикти жана диетасыз жыйылган сын-келбетти каалагандар үчүн «ачкычтан» чечим."}};
+const COMPLEXES = {"complex-a": {"brand": "«ФИГУРА A» · Диетический комплексный набор", "short": "Фигура · детокс", "desc": "Готовая программа: мягкое очищение, поддержка обмена веществ, контроль аппетита, питание суставов и общий тонус за счёт женьшеня и дудника.\n\nДля тех, кто хочет уменьшить объёмы без жёстких диет, чувствует тяжесть и отёчность, много сидит и мало двигается."}, "complex-b": {"brand": "«ФИГУРА B» (версия Snow Lan Duo)", "short": "Фигура · снижение веса", "desc": "Акцент на лёгком очищении, работе с пищеварением и более выраженном дренажном эффекте — для фигуры, склонной к отёкам и «мягкости» в области живота и бёдер.\n\nДля тех, у кого вес «стоит», хотя питание уже улучшено, и есть застойность в теле."}, "complex-c": {"brand": "КОМПЛЕКС «C» «Молодость изнутри и снаружи»", "short": "Молодость · антивозраст", "desc": "Трёхступенчатая система: коллагеновый пептидный порошок питает кожу изнутри, напиток с дигидрокверцетином защищает коллаген, антивозрастной мист закрепляет результат снаружи.\n\nДля тех, кто замечает первые морщины, тусклость кожи и хочет замедлить старение без процедур и уколов."}, "complex-d": {"brand": "КОМПЛЕКС «D» «Суставы и подвижность»", "short": "Суставы · движение", "desc": "Порошок для суставов питает хрящ изнутри, костный коллагеновый напиток укрепляет кость, а массажный крем даёт быстрое облегчение снаружи.\n\nДля тех, у кого колени скрипят, спина ноет, и важна профилактика остеопороза."}, "complex-e": {"brand": "КОМПЛЕКС «E» «Сосуды и давление»", "short": "Сосуды · сердце", "desc": "Таблетки Ангелика Кейске и Натто очищают сосуды, напиток с дигидрокверцетином защищает капилляры, почечный комплекс регулирует давление через водно-солевой баланс.\n\nДля тех, у кого давление скачет, отёки к вечеру и слабое кровообращение."}, "complex-f": {"brand": "КОМПЛЕКС «F» «Мужская сила и тонус»", "short": "Мужская сила", "desc": "Почечный комплекс восстанавливает базовую энергию, напиток с дигидрокверцетином ускоряет восстановление, таблетки Ангелика Кейске улучшают доставку питания к тканям.\n\nДля тех, кто чувствует упадок сил и снижение мужского тонуса."}, "complex-g": {"brand": "КОМПЛЕКС «G» «Женское здоровье»", "short": "Женский баланс", "desc": "Интимный бактериостатический комплекс восстанавливает микрофлору, почечный комплекс нормализует гормональный баланс и снижает ПМС, фруктово-овощные таблетки контролируют аппетит.\n\nДля тех, у кого гормональный дисбаланс, ПМС и тяга к перекусам."}, "complex-h": {"brand": "КОМПЛЕКС «H» «Антиоксидант и детокс»", "short": "Иммунитет · детокс", "desc": "Напиток с дигидрокверцетином нейтрализует свободные радикалы, таблетки Лотос и Боярышник очищают кишечник, таблетки Ангелика Кейске очищают кровь и сосуды.\n\nДля тех, у кого ощущение зашлакованности, тяжесть без причины, хронический стресс."}, "complex-i": {"brand": "КОМПЛЕКС «I» «Глаза и экранная усталость»", "short": "Зрение · глаза", "desc": "Глазной стик снимает усталость снаружи, напиток с дигидрокверцетином защищает сетчатку изнутри, таблетки улучшают микроциркуляцию в капиллярах глаза.\n\nДля тех, чьи глаза краснеют и устают после работы за экраном."}, "complex-j": {"brand": "КОМПЛЕКС «J» «Лёгкий старт»", "short": "Энергия · тонус", "desc": "Базовая программа: таблетки Лотос и Боярышник очищают кишечник и открывают путь для усвоения питательных веществ, почечный комплекс восстанавливает базовую энергию и тонус.\n\nДля тех, кто хочет попробовать продукцию JIMON с чего-то простого и понятного."}};
 const ALL_ITEMS = Object.assign({}, PRODUCTS, COMPLEXES);
 
 function toggleDesc(el){
@@ -566,5 +1110,5 @@ async function sendCatalogPeng(){
   input.focus();
 }
 </script>
-  </body>
+</body>
 </html>
